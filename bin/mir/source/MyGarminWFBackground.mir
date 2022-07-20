@@ -1,0 +1,62 @@
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc"; @line = 6; ]
+class Background extends WatchUi.Drawable{
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc"; @line = 8; ]
+    function initialize() as Void {
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFBackground_mc_8_26_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc" 9 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFBackground_mc_8_26_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFBackground_mc_8_26_stop" ]
+        %dictionary.1 = local;
+        %tmp.1 = newd 1;
+        %tmp.3 = const :identifier;
+        %tmp.4 = "Background";
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        lputv %dictionary.1 %tmp.6;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc" 13 8 ]
+        %tmp.8 = getv ? :Drawable;
+        %tmp.9 = getv function %tmp.8 :initialize;
+        %tmp.11 = lgetv %dictionary.1;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFBackground_mc_8_26_stop:
+    }
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc"; @line = 16; ]
+    function draw(dc as Dc) as Void {
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFBackground_mc_16_36_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc" 18 8 ]
+        %tmp.2 = lgetv %dc;
+        %tmp.3 = getv function %tmp.2 :setColor;
+        %tmp.4 = getm $.Toybox.Graphics;
+        %tmp.5 = getv %tmp.4 :COLOR_TRANSPARENT;
+        %tmp.6 = self;
+        %tmp.7 = getv function %tmp.6 :getApp;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = getv function %tmp.8 :getProperty;
+        %tmp.10 = "BackgroundColor";
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        %tmp.12 = as %tmp.11 Number;
+        invoke %tmp.2 %tmp.3(%tmp.5, %tmp.12);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc" 19 8 ]
+        %tmp.14 = lgetv %dc;
+        %tmp.15 = getv function %tmp.14 :clear;
+        invoke %tmp.14 %tmp.15();
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFBackground_mc_16_36_stop:
+    }
+}
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFBackground.mc"; @line = 1; ]
+<init> {
+}

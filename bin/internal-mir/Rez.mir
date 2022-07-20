@@ -1,0 +1,146 @@
+[ @file = "Rez.mc"; @line = 1; ]
+module Rez {
+    [ @file = "Rez.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "Rez.mc"; @line = 2; ]
+    module Drawables {
+        [ @file = "Rez.mc"; @line = 2; ]
+        <init> {
+        }
+        [ @file = "Rez.mc"; @line = 3; ]
+        import Toybox.Lang;
+        [ @file = "Rez.mc"; @line = 4; @position = 19; initialized = true; ]
+        var LauncherIcon as Symbol;
+    }
+    [ @file = "Rez.mc"; @line = 6; ]
+    module Fonts {
+        [ @file = "Rez.mc"; @line = 6; ]
+        <init> {
+        }
+    }
+    [ @file = "Rez.mc"; @line = 8; ]
+    module JsonData {
+        [ @file = "Rez.mc"; @line = 8; ]
+        <init> {
+        }
+    }
+    [ @file = "Rez.mc"; @line = 10; ]
+    module Layouts {
+        [ @file = "Rez.mc"; @line = 10; ]
+        <init> {
+        }
+        [ @file = "Rez.mc"; @line = 11; ]
+        import Toybox.Lang;
+        [ @file = "Rez.mc"; @line = 12; ]
+        using Toybox.WatchUi;
+        [ @file = "Rez.mc"; @line = 13; ]
+        using Toybox.WatchUi as :Ui;
+        [ @file = "Rez.mc"; @line = 14; ]
+        using Toybox.Graphics;
+        [ @file = "Rez.mc"; @line = 15; ]
+        using Toybox.Graphics as :Gfx;
+        [ @file = "Rez.mc"; @line = 17; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+Rez_mc_17_69_start:
+[ "Rez.mc" 19 0 ]
+            [ "Rez_mc_17_69_start" "Rez_mc_17_69_stop" ]
+            %rez_cmp_local_custom_drawable_55869975410155360243.1 = local;
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_55869975410155360243.1 %tmp.1;
+[ "Rez.mc" 20 0 ]
+            [ "Rez_mc_17_69_start" "Rez_mc_17_69_stop" ]
+            %rez_cmp_local_text_TimeLabel.2 = local;
+            %tmp.7 = getm $.Toybox.WatchUi;
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            %tmp.12 = "TimeLabel";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            %tmp.17 = getm $.Toybox.Graphics;
+            %tmp.18 = getv %tmp.17 :COLOR_BLUE;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            %tmp.23 = 260;
+            %tmp.24 = 0.5;
+            %tmp.25 = mul %tmp.23 %tmp.24;
+            %tmp.26 = dup %tmp.20;
+            %tmp.27 = aputv %tmp.26 %tmp.22 %tmp.25;
+            %tmp.29 = const :locY;
+            %tmp.30 = 260;
+            %tmp.32 = lgetv %dc;
+            %tmp.33 = getv function %tmp.32 :getFontHeight;
+            %tmp.34 = getm $.Toybox.Graphics;
+            %tmp.35 = getv %tmp.34 :FONT_LARGE;
+            %tmp.36 = invoke %tmp.32 %tmp.33(%tmp.35);
+            %tmp.37 = sub %tmp.30 %tmp.36;
+            %tmp.38 = 0.5;
+            %tmp.39 = mul %tmp.37 %tmp.38;
+            %tmp.40 = dup %tmp.27;
+            %tmp.41 = aputv %tmp.40 %tmp.29 %tmp.39;
+            %tmp.43 = const :justification;
+            %tmp.44 = getm $.Toybox.Graphics;
+            %tmp.45 = getv %tmp.44 :TEXT_JUSTIFY_CENTER;
+            %tmp.46 = dup %tmp.41;
+            %tmp.47 = aputv %tmp.46 %tmp.43 %tmp.45;
+            %tmp.49 = const :font;
+            %tmp.50 = getm $.Toybox.Graphics;
+            %tmp.51 = getv %tmp.50 :FONT_LARGE;
+            %tmp.52 = dup %tmp.47;
+            %tmp.53 = aputv %tmp.52 %tmp.49 %tmp.51;
+            %tmp.5 = newc %tmp.8 (%tmp.53);
+            lputv %rez_cmp_local_text_TimeLabel.2 %tmp.5;
+[ "Rez.mc" 22 8 ]
+            %tmp.54 = newa Array<WatchUi.Drawable> 2;
+            %tmp.56 = lgetv %rez_cmp_local_custom_drawable_55869975410155360243.1;
+            %tmp.57 = dup %tmp.54;
+            %tmp.58 = aputv %tmp.57 0 %tmp.56;
+            %tmp.60 = lgetv %rez_cmp_local_text_TimeLabel.2;
+            %tmp.61 = dup %tmp.58;
+            %tmp.62 = aputv %tmp.61 1 %tmp.60;
+            ret %tmp.62;
+Rez_mc_17_69_stop:
+        }
+    }
+    [ @file = "Rez.mc"; @line = 27; ]
+    module Menus {
+        [ @file = "Rez.mc"; @line = 27; ]
+        <init> {
+        }
+    }
+    [ @file = "Rez.mc"; @line = 29; ]
+    module Strings {
+        [ @file = "Rez.mc"; @line = 29; ]
+        <init> {
+        }
+        [ @file = "Rez.mc"; @line = 30; ]
+        import Toybox.Lang;
+        [ @file = "Rez.mc"; @line = 31; @position = 19; initialized = true; ]
+        var ColorLightGray as Symbol;
+        [ @file = "Rez.mc"; @line = 32; @position = 19; initialized = true; ]
+        var ColorBlue as Symbol;
+        [ @file = "Rez.mc"; @line = 33; @position = 19; initialized = true; ]
+        var ColorRed as Symbol;
+        [ @file = "Rez.mc"; @line = 34; @position = 19; initialized = true; ]
+        var ForegroundColorTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 35; @position = 19; initialized = true; ]
+        var BackgroundColorTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 36; @position = 19; initialized = true; ]
+        var ColorDarkGray as Symbol;
+        [ @file = "Rez.mc"; @line = 37; @position = 19; initialized = true; ]
+        var MilitaryFormatTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 38; @position = 19; initialized = true; ]
+        var ColorBlack as Symbol;
+        [ @file = "Rez.mc"; @line = 39; @position = 19; initialized = true; ]
+        var ColorWhite as Symbol;
+        [ @file = "Rez.mc"; @line = 40; @position = 19; initialized = true; ]
+        var AppName as Symbol;
+    }
+}
+[ @file = "Rez.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,185 @@
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 5; ]
+import Toybox.WatchUi;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 7; ]
+class MyGarminWFView extends WatchUi.WatchFace{
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 9; ]
+    function initialize() as Void {
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_9_26_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 10 8 ]
+        %tmp.2 = getv ? :WatchFace;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_9_26_stop:
+    }
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 14; ]
+    function onLayout(dc as Dc) as Void {
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_14_40_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 15 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_14_40_stop:
+    }
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 21; ]
+    function onShow() as Void {
+    }
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 25; ]
+    function onUpdate(dc as Dc) as Void {
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 27 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_stop" ]
+        %timeFormat.1 = local;
+        %tmp.1 = "$1$:$2$";
+        lputv %timeFormat.1 %tmp.1;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 28 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_stop" ]
+        %clockTime.2 = local;
+        %tmp.2 = getm $.Toybox.System;
+        %tmp.3 = getv function %tmp.2 :getClockTime;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %clockTime.2 %tmp.4;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 29 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_stop" ]
+        %hours.3 = local;
+        %tmp.6 = lgetv %clockTime.2;
+        %tmp.7 = getv %tmp.6 :hour;
+        lputv %hours.3 %tmp.7;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 30 8 ]
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_8_if_stmt:
+        %tmp.8 = getm $.Toybox.System;
+        %tmp.9 = getv function %tmp.8 :getDeviceSettings;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        %tmp.11 = getv %tmp.10 :is24Hour;
+        %tmp.12 = not %tmp.11;
+        bf %tmp.12 @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_8_if_false;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_8_if_true:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_50_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 31 12 ]
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_12_if_stmt:
+        %tmp.14 = lgetv %hours.3;
+        %tmp.15 = 12;
+        %tmp.16 = gt %tmp.14 %tmp.15;
+        bf %tmp.16 @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_12_if_end;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_12_if_true:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_28_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 32 16 ]
+        %tmp.18 = lgetv %hours.3;
+        %tmp.19 = 12;
+        %tmp.20 = sub %tmp.18 %tmp.19;
+        lputv %hours.3 %tmp.20;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_28_stop:
+        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_12_if_end;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_12_if_end:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_50_stop:
+        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_8_if_end;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_8_if_false:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_34_15_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 35 12 ]
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_12_if_stmt:
+        %tmp.21 = self;
+        %tmp.22 = getv function %tmp.21 :getApp;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.24 = getv function %tmp.23 :getProperty;
+        %tmp.25 = "UseMilitaryFormat";
+        %tmp.26 = invoke %tmp.23 %tmp.24(%tmp.25);
+        bf %tmp.26 @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_12_if_end;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_12_if_true:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_59_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 36 16 ]
+        %tmp.27 = "$1$$2$";
+        lputv %timeFormat.1 %tmp.27;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 37 16 ]
+        %tmp.29 = lgetv %hours.3;
+        %tmp.30 = getv function %tmp.29 :format;
+        %tmp.31 = "%02d";
+        %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
+        lputv %hours.3 %tmp.32;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_59_stop:
+        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_12_if_end;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_12_if_end:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_34_15_stop:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_8_if_end:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 40 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_stop" ]
+        %timeString.4 = local;
+        %tmp.33 = getm $.Toybox.Lang;
+        %tmp.34 = getv function %tmp.33 :format;
+        %tmp.36 = lgetv %timeFormat.1;
+        %tmp.37 = newa 2;
+        %tmp.39 = lgetv %hours.3;
+        %tmp.40 = dup %tmp.37;
+        %tmp.41 = aputv %tmp.40 0 %tmp.39;
+        %tmp.43 = lgetv %clockTime.2;
+        %tmp.44 = getv %tmp.43 :min;
+        %tmp.45 = getv function %tmp.44 :format;
+        %tmp.46 = "%02d";
+        %tmp.47 = invoke %tmp.44 %tmp.45(%tmp.46);
+        %tmp.48 = dup %tmp.41;
+        %tmp.49 = aputv %tmp.48 1 %tmp.47;
+        %tmp.50 = invoke %tmp.33 %tmp.34(%tmp.36, %tmp.49);
+        lputv %timeString.4 %tmp.50;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 43 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_stop" ]
+        %view.5 = local;
+        %tmp.52 = getv ? :View;
+        %tmp.53 = getv function %tmp.52 :findDrawableById;
+        %tmp.54 = "TimeLabel";
+        %tmp.55 = invoke %tmp.52 %tmp.53(%tmp.54);
+        %tmp.56 = as %tmp.55 Text;
+        lputv %view.5 %tmp.56;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 44 8 ]
+        %tmp.58 = lgetv %view.5;
+        %tmp.59 = getv function %tmp.58 :setColor;
+        %tmp.60 = self;
+        %tmp.61 = getv function %tmp.60 :getApp;
+        %tmp.62 = invoke %tmp.60 %tmp.61();
+        %tmp.63 = getv function %tmp.62 :getProperty;
+        %tmp.64 = "ForegroundColor";
+        %tmp.65 = invoke %tmp.62 %tmp.63(%tmp.64);
+        %tmp.66 = as %tmp.65 Number;
+        invoke %tmp.58 %tmp.59(%tmp.66);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 45 8 ]
+        %tmp.68 = lgetv %view.5;
+        %tmp.69 = getv function %tmp.68 :setText;
+        %tmp.71 = lgetv %timeString.4;
+        invoke %tmp.68 %tmp.69(%tmp.71);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 48 8 ]
+        %tmp.73 = getv ? :View;
+        %tmp.74 = getv function %tmp.73 :onUpdate;
+        %tmp.76 = lgetv %dc;
+        invoke %tmp.73 %tmp.74(%tmp.76);
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_stop:
+    }
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 54; ]
+    function onHide() as Void {
+    }
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 58; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 62; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 1; ]
+<init> {
+}
