@@ -4,84 +4,186 @@
 <pcToLineNum>
 <entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="1" lineNum="32" parent="globals" pc="268435470" symbol="getApp"/>
 <entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="1" lineNum="31" parent="globals" pc="268435460" symbol="getApp"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="2" lineNum="7" parent="globals/MyGarminWFView" pc="268435486" symbol="&lt;init&gt;"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="5" lineNum="15" parent="globals/MyGarminWFView" pc="268435507" symbol="onLayout"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="5" lineNum="14" parent="globals/MyGarminWFView" pc="268435505" symbol="onLayout"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="7" lineNum="9" parent="globals/MyGarminWFView" pc="268435549" symbol="initialize"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="7" lineNum="10" parent="globals/MyGarminWFView" pc="268435551" symbol="initialize"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="48" parent="globals/MyGarminWFView" pc="268435864" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="45" parent="globals/MyGarminWFView" pc="268435850" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="44" parent="globals/MyGarminWFView" pc="268435813" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="25" parent="globals/MyGarminWFView" pc="268435574" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="43" parent="globals/MyGarminWFView" pc="268435785" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="30" parent="globals/MyGarminWFView" pc="268435612" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="37" parent="globals/MyGarminWFView" pc="268435699" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="36" parent="globals/MyGarminWFView" pc="268435692" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="29" parent="globals/MyGarminWFView" pc="268435602" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="27" parent="globals/MyGarminWFView" pc="268435578" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="28" parent="globals/MyGarminWFView" pc="268435585" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="31" parent="globals/MyGarminWFView" pc="268435637" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="32" parent="globals/MyGarminWFView" pc="268435648" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="40" parent="globals/MyGarminWFView" pc="268435720" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="35" parent="globals/MyGarminWFView" pc="268435664" symbol="onUpdate"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="10" lineNum="6" parent="globals/Background" pc="268435889" symbol="&lt;init&gt;"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="11" lineNum="13" parent="globals/Background" pc="268435933" symbol="initialize"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="11" lineNum="9" parent="globals/Background" pc="268435912" symbol="initialize"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="11" lineNum="8" parent="globals/Background" pc="268435908" symbol="initialize"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="12" lineNum="16" parent="globals/Background" pc="268435958" symbol="draw"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="12" lineNum="19" parent="globals/Background" pc="268436009" symbol="draw"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="12" lineNum="18" parent="globals/Background" pc="268435960" symbol="draw"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="13" lineNum="5" parent="globals/MyGarminWFApp" pc="268436022" symbol="&lt;init&gt;"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="14" lineNum="12" parent="globals/MyGarminWFApp" pc="268436041" symbol="onStart"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="15" lineNum="26" parent="globals/MyGarminWFApp" pc="268436046" symbol="onSettingsChanged"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="15" lineNum="25" parent="globals/MyGarminWFApp" pc="268436044" symbol="onSettingsChanged"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="16" lineNum="20" parent="globals/MyGarminWFApp" pc="268436063" symbol="getInitialView"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="16" lineNum="21" parent="globals/MyGarminWFApp" pc="268436065" symbol="getInitialView"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="17" lineNum="7" parent="globals/MyGarminWFApp" pc="268436106" symbol="initialize"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="17" lineNum="8" parent="globals/MyGarminWFApp" pc="268436108" symbol="initialize"/>
-<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="18" lineNum="16" parent="globals/MyGarminWFApp" pc="268436131" symbol="onStop"/>
-<entry filename="Rez.mc" id="19" lineNum="1" parent="globals/Rez" pc="268436134" symbol="&lt;init&gt;"/>
-<entry filename="Rez.mc" id="20" lineNum="20" parent="globals/Rez/Layouts" pc="268436198" symbol="WatchFace"/>
-<entry filename="Rez.mc" id="20" lineNum="17" parent="globals/Rez/Layouts" pc="268436158" symbol="WatchFace"/>
-<entry filename="Rez.mc" id="20" lineNum="19" parent="globals/Rez/Layouts" pc="268436170" symbol="WatchFace"/>
-<entry filename="Rez.mc" id="20" lineNum="22" parent="globals/Rez/Layouts" pc="268436361" symbol="WatchFace"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="2" lineNum="11" parent="globals/MyGarminWFView" pc="268435486" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="5" lineNum="18" parent="globals/MyGarminWFView" pc="268435505" symbol="onLayout"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="5" lineNum="19" parent="globals/MyGarminWFView" pc="268435507" symbol="onLayout"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="7" lineNum="13" parent="globals/MyGarminWFView" pc="268435549" symbol="initialize"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="7" lineNum="14" parent="globals/MyGarminWFView" pc="268435551" symbol="initialize"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="37" parent="globals/MyGarminWFView" pc="268435646" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="56" parent="globals/MyGarminWFView" pc="268435954" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="33" parent="globals/MyGarminWFView" pc="268435627" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="52" parent="globals/MyGarminWFView" pc="268435846" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="161" parent="globals/MyGarminWFView" pc="268437800" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="98" parent="globals/MyGarminWFView" pc="268436393" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="165" parent="globals/MyGarminWFView" pc="268437870" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="180" parent="globals/MyGarminWFView" pc="268438308" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="79" parent="globals/MyGarminWFView" pc="268436227" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="112" parent="globals/MyGarminWFView" pc="268436653" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="158" parent="globals/MyGarminWFView" pc="268437671" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="177" parent="globals/MyGarminWFView" pc="268438200" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="116" parent="globals/MyGarminWFView" pc="268436741" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="139" parent="globals/MyGarminWFView" pc="268437133" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="82" parent="globals/MyGarminWFView" pc="268436263" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="172" parent="globals/MyGarminWFView" pc="268438103" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="49" parent="globals/MyGarminWFView" pc="268435781" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="100" parent="globals/MyGarminWFView" pc="268436407" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="123" parent="globals/MyGarminWFView" pc="268436829" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="146" parent="globals/MyGarminWFView" pc="268437278" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="169" parent="globals/MyGarminWFView" pc="268437964" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="90" parent="globals/MyGarminWFView" pc="268436314" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="104" parent="globals/MyGarminWFView" pc="268436486" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="127" parent="globals/MyGarminWFView" pc="268436869" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="108" parent="globals/MyGarminWFView" pc="268436565" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="57" parent="globals/MyGarminWFView" pc="268435971" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="63" parent="globals/MyGarminWFView" pc="268436075" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="53" parent="globals/MyGarminWFView" pc="268435894" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="44" parent="globals/MyGarminWFView" pc="268435725" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="181" parent="globals/MyGarminWFView" pc="268438357" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="38" parent="globals/MyGarminWFView" pc="268435663" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="136" parent="globals/MyGarminWFView" pc="268436989" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="155" parent="globals/MyGarminWFView" pc="268437563" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="178" parent="globals/MyGarminWFView" pc="268438213" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="113" parent="globals/MyGarminWFView" pc="268436681" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="83" parent="globals/MyGarminWFView" pc="268436273" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="159" parent="globals/MyGarminWFView" pc="268437720" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="60" parent="globals/MyGarminWFView" pc="268436042" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="117" parent="globals/MyGarminWFView" pc="268436769" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="66" parent="globals/MyGarminWFView" pc="268436108" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="41" parent="globals/MyGarminWFView" pc="268435709" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="150" parent="globals/MyGarminWFView" pc="268437466" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="88" parent="globals/MyGarminWFView" pc="268436300" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="69" parent="globals/MyGarminWFView" pc="268436119" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="173" parent="globals/MyGarminWFView" pc="268438139" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="101" parent="globals/MyGarminWFView" pc="268436435" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="147" parent="globals/MyGarminWFView" pc="268437327" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="91" parent="globals/MyGarminWFView" pc="268436321" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="124" parent="globals/MyGarminWFView" pc="268436842" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="166" parent="globals/MyGarminWFView" pc="268437889" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="105" parent="globals/MyGarminWFView" pc="268436514" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="72" parent="globals/MyGarminWFView" pc="268436123" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="128" parent="globals/MyGarminWFView" pc="268436876" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="109" parent="globals/MyGarminWFView" pc="268436593" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="58" parent="globals/MyGarminWFView" pc="268435974" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="46" parent="globals/MyGarminWFView" pc="268435760" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="61" parent="globals/MyGarminWFView" pc="268436072" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="96" parent="globals/MyGarminWFView" pc="268436328" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="77" parent="globals/MyGarminWFView" pc="268436200" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="140" parent="globals/MyGarminWFView" pc="268437168" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="182" parent="globals/MyGarminWFView" pc="268438401" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="39" parent="globals/MyGarminWFView" pc="268435673" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="133" parent="globals/MyGarminWFView" pc="268436938" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="179" parent="globals/MyGarminWFView" pc="268438262" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="114" parent="globals/MyGarminWFView" pc="268436718" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="80" parent="globals/MyGarminWFView" pc="268436237" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="156" parent="globals/MyGarminWFView" pc="268437576" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="118" parent="globals/MyGarminWFView" pc="268436806" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="137" parent="globals/MyGarminWFView" pc="268437038" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="84" parent="globals/MyGarminWFView" pc="268436283" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="29" parent="globals/MyGarminWFView" pc="268435574" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="64" parent="globals/MyGarminWFView" pc="268436105" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="85" parent="globals/MyGarminWFView" pc="268436293" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="170" parent="globals/MyGarminWFView" pc="268438010" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="89" parent="globals/MyGarminWFView" pc="268436307" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="132" parent="globals/MyGarminWFView" pc="268436902" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="151" parent="globals/MyGarminWFView" pc="268437502" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="102" parent="globals/MyGarminWFView" pc="268436472" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="125" parent="globals/MyGarminWFView" pc="268436855" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="167" parent="globals/MyGarminWFView" pc="268437893" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="106" parent="globals/MyGarminWFView" pc="268436551" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="129" parent="globals/MyGarminWFView" pc="268436883" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="148" parent="globals/MyGarminWFView" pc="268437373" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="73" parent="globals/MyGarminWFView" pc="268436140" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="36" parent="globals/MyGarminWFView" pc="268435639" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="40" parent="globals/MyGarminWFView" pc="268435698" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="67" parent="globals/MyGarminWFView" pc="268436115" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="32" parent="globals/MyGarminWFView" pc="268435578" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="74" parent="globals/MyGarminWFView" pc="268436170" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="97" parent="globals/MyGarminWFView" pc="268436356" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="160" parent="globals/MyGarminWFView" pc="268437764" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="78" parent="globals/MyGarminWFView" pc="268436217" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="164" parent="globals/MyGarminWFView" pc="268437857" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="141" parent="globals/MyGarminWFView" pc="268437204" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="183" parent="globals/MyGarminWFView" pc="268438437" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="157" parent="globals/MyGarminWFView" pc="268437625" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="81" parent="globals/MyGarminWFView" pc="268436253" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="138" parent="globals/MyGarminWFView" pc="268437084" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="45" parent="globals/MyGarminWFView" pc="268435753" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="171" parent="globals/MyGarminWFView" pc="268438059" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="110" parent="globals/MyGarminWFView" pc="268436630" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="168" parent="globals/MyGarminWFView" pc="268437915" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="145" parent="globals/MyGarminWFView" pc="268437265" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="126" parent="globals/MyGarminWFView" pc="268436862" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFView.mc" id="9" lineNum="149" parent="globals/MyGarminWFView" pc="268437422" symbol="onUpdate"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="10" lineNum="6" parent="globals/Background" pc="268438495" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="11" lineNum="13" parent="globals/Background" pc="268438539" symbol="initialize"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="11" lineNum="9" parent="globals/Background" pc="268438518" symbol="initialize"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="11" lineNum="8" parent="globals/Background" pc="268438514" symbol="initialize"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="12" lineNum="16" parent="globals/Background" pc="268438564" symbol="draw"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="12" lineNum="19" parent="globals/Background" pc="268438615" symbol="draw"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFBackground.mc" id="12" lineNum="18" parent="globals/Background" pc="268438566" symbol="draw"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="13" lineNum="5" parent="globals/MyGarminWFApp" pc="268438628" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="14" lineNum="12" parent="globals/MyGarminWFApp" pc="268438647" symbol="onStart"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="15" lineNum="26" parent="globals/MyGarminWFApp" pc="268438652" symbol="onSettingsChanged"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="15" lineNum="25" parent="globals/MyGarminWFApp" pc="268438650" symbol="onSettingsChanged"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="16" lineNum="20" parent="globals/MyGarminWFApp" pc="268438669" symbol="getInitialView"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="16" lineNum="21" parent="globals/MyGarminWFApp" pc="268438671" symbol="getInitialView"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="17" lineNum="7" parent="globals/MyGarminWFApp" pc="268438712" symbol="initialize"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="17" lineNum="8" parent="globals/MyGarminWFApp" pc="268438714" symbol="initialize"/>
+<entry filename="D:\\Mes Sites Internet\\watchfaces\\MyGarminWF\\source\\MyGarminWFApp.mc" id="18" lineNum="16" parent="globals/MyGarminWFApp" pc="268438737" symbol="onStop"/>
+<entry filename="Rez.mc" id="19" lineNum="1" parent="globals/Rez" pc="268438740" symbol="&lt;init&gt;"/>
+<entry filename="Rez.mc" id="20" lineNum="22" parent="globals/Rez/Layouts" pc="268438776" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="20" lineNum="23" parent="globals/Rez/Layouts" pc="268438804" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="20" lineNum="24" parent="globals/Rez/Layouts" pc="268438937" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="20" lineNum="25" parent="globals/Rez/Layouts" pc="268439070" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="20" lineNum="26" parent="globals/Rez/Layouts" pc="268439203" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="20" lineNum="30" parent="globals/Rez/Layouts" pc="268439602" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="20" lineNum="27" parent="globals/Rez/Layouts" pc="268439336" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="20" lineNum="28" parent="globals/Rez/Layouts" pc="268439469" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="20" lineNum="20" parent="globals/Rez/Layouts" pc="268438764" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
 <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
 <entry id="7" module="true" symbol="globals/Rez/Menus"/>
 <entry id="8389683" method="true" symbol="onSettingsChanged"/>
-<entry field="true" id="20" symbol="ColorRed"/>
-<entry field="true" id="23" symbol="MilitaryFormatTitle"/>
+<entry field="true" id="24" symbol="ColorRed"/>
+<entry field="true" id="27" symbol="MilitaryFormatTitle"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry field="true" id="17" symbol="ColorBlue"/>
-<entry field="true" id="14" symbol="AppName"/>
+<entry field="true" id="21" symbol="ColorBlue"/>
+<entry field="true" id="15" symbol="AppName"/>
+<entry id="8388633" module="true" symbol="ActivityMonitor"/>
 <entry id="8" module="true" symbol="globals/Rez/Strings"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry field="true" id="8388724" symbol="battery"/>
+<entry field="true" id="8388912" symbol="steps"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
 <entry id="2" module="true" symbol="globals/Rez"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
+<entry id="8391489" module="true" symbol="Weather"/>
 <entry id="9" object="true" symbol="MyGarminWFApp"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389348" symbol="font"/>
 <entry id="12" module="true" symbol="Menus"/>
 <entry id="8389275" method="true" symbol="getApp"/>
-<entry field="true" id="18" symbol="ColorDarkGray"/>
+<entry field="true" id="22" symbol="ColorDarkGray"/>
 <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
 <entry id="8389376" method="true" symbol="onEnterSleep"/>
 <entry field="true" id="8389063" symbol="identifier"/>
+<entry field="true" id="17" symbol="BatteryRemainingDays"/>
 <entry id="8389349" symbol="justification"/>
-<entry field="true" id="21" symbol="ColorWhite"/>
+<entry field="true" id="25" symbol="ColorWhite"/>
 <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
-<entry field="true" id="16" symbol="ColorBlack"/>
+<entry field="true" id="20" symbol="ColorBlack"/>
 <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
 <entry id="8389377" method="true" symbol="onExitSleep"/>
 <entry id="8388644" module="true" symbol="System"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="19" symbol="BatteryRemainingPercent"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
 <entry id="8389068" method="true" symbol="draw"/>
@@ -89,48 +191,90 @@
 <entry id="8388610" symbol="statics"/>
 <entry id="8389123" method="true" symbol="onShow"/>
 <entry id="8389350" module="true" symbol="globals"/>
-<entry field="true" id="15" symbol="BackgroundColorTitle"/>
+<entry field="true" id="16" symbol="BackgroundColorTitle"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
 <entry id="8390146" module="true" object="true" symbol="Background"/>
 <entry id="8388702" method="true" symbol="initialize"/>
 <entry id="8389279" method="true" symbol="onStart"/>
-<entry field="true" id="19" symbol="ColorLightGray"/>
+<entry field="true" id="14" symbol="stairs"/>
+<entry field="true" id="23" symbol="ColorLightGray"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry id="8389347" symbol="color"/>
-<entry field="true" id="22" symbol="ForegroundColorTitle"/>
+<entry field="true" id="26" symbol="ForegroundColorTitle"/>
 <entry id="11" module="true" symbol="Layouts"/>
 <entry id="10" object="true" symbol="MyGarminWFView"/>
+<entry field="true" id="18" symbol="BatteryRemainingModeTitle"/>
 <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
 <entry id="8389125" method="true" symbol="onHide"/>
 <entry id="8388635" module="true" symbol="Application"/>
 </symbolTable>
 <localVars>
 <entry arg="true" endPc="268435548" name="dc" stackId="1" startPc="268435505"/>
-<entry arg="true" endPc="268435888" name="dc" stackId="1" startPc="268435574"/>
-<entry endPc="268435887" name="timeFormat" stackId="2" startPc="268435578"/>
-<entry endPc="268435887" name="clockTime" stackId="3" startPc="268435578"/>
-<entry endPc="268435887" name="hours" stackId="4" startPc="268435578"/>
-<entry endPc="268435887" name="timeString" stackId="5" startPc="268435578"/>
-<entry endPc="268435887" name="view" stackId="6" startPc="268435578"/>
-<entry endPc="268435956" name="dictionary" stackId="1" startPc="268435912"/>
-<entry arg="true" endPc="268436021" name="dc" stackId="1" startPc="268435958"/>
-<entry arg="true" endPc="268436387" name="dc" stackId="1" startPc="268436158"/>
-<entry endPc="268436387" name="rez_cmp_local_custom_drawable_55869975410155360243" stackId="2" startPc="268436170"/>
-<entry endPc="268436387" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268436170"/>
+<entry arg="true" endPc="268438494" name="dc" stackId="1" startPc="268435574"/>
+<entry endPc="268438493" name="timeFormat" stackId="2" startPc="268435578"/>
+<entry endPc="268438493" name="clockTime" stackId="3" startPc="268435578"/>
+<entry endPc="268438493" name="hours" stackId="4" startPc="268435578"/>
+<entry endPc="268438493" name="timeString" stackId="5" startPc="268435578"/>
+<entry endPc="268438493" name="today" stackId="6" startPc="268435578"/>
+<entry endPc="268438493" name="dateString" stackId="7" startPc="268435578"/>
+<entry endPc="268438493" name="battery" stackId="8" startPc="268435578"/>
+<entry endPc="268438493" name="batteryVal" stackId="9" startPc="268435578"/>
+<entry endPc="268438493" name="batteryString" stackId="10" startPc="268435578"/>
+<entry endPc="268438493" name="weather" stackId="11" startPc="268435578"/>
+<entry endPc="268438493" name="temperatureString" stackId="12" startPc="268435578"/>
+<entry endPc="268438493" name="precipitationString" stackId="13" startPc="268435578"/>
+<entry endPc="268438493" name="monitoring" stackId="14" startPc="268435578"/>
+<entry endPc="268438493" name="stepsString" stackId="15" startPc="268435578"/>
+<entry endPc="268438493" name="stepsGoalString" stackId="16" startPc="268435578"/>
+<entry endPc="268438493" name="activeMinutesString" stackId="17" startPc="268435578"/>
+<entry endPc="268438493" name="activeMinutesGoalString" stackId="18" startPc="268435578"/>
+<entry endPc="268438493" name="floorsClimbedString" stackId="19" startPc="268435578"/>
+<entry endPc="268438493" name="floorsClimbedGoalString" stackId="20" startPc="268435578"/>
+<entry endPc="268438493" name="caloriesString" stackId="21" startPc="268435578"/>
+<entry endPc="268438493" name="caloriesGoalString" stackId="22" startPc="268435578"/>
+<entry endPc="268438493" name="viewTime" stackId="23" startPc="268435578"/>
+<entry endPc="268438493" name="viewDate" stackId="24" startPc="268435578"/>
+<entry endPc="268438493" name="viewBattery" stackId="25" startPc="268435578"/>
+<entry endPc="268438493" name="viewWeather" stackId="26" startPc="268435578"/>
+<entry endPc="268438493" name="viewSteps" stackId="27" startPc="268435578"/>
+<entry endPc="268438493" name="viewActiveMinutes" stackId="28" startPc="268435578"/>
+<entry endPc="268438493" name="widthScreen" stackId="29" startPc="268435578"/>
+<entry endPc="268438493" name="heightScreen" stackId="30" startPc="268435578"/>
+<entry endPc="268438493" name="width" stackId="31" startPc="268435578"/>
+<entry endPc="268438493" name="height" stackId="32" startPc="268435578"/>
+<entry endPc="268438493" name="radius" stackId="33" startPc="268435578"/>
+<entry endPc="268438493" name="x" stackId="34" startPc="268435578"/>
+<entry endPc="268438493" name="y" stackId="35" startPc="268435578"/>
+<entry endPc="268438562" name="dictionary" stackId="1" startPc="268438518"/>
+<entry arg="true" endPc="268438627" name="dc" stackId="1" startPc="268438564"/>
+<entry arg="true" endPc="268439678" name="dc" stackId="1" startPc="268438764"/>
+<entry endPc="268439678" name="rez_cmp_local_custom_drawable_16937345952738578691" stackId="2" startPc="268438776"/>
+<entry endPc="268439678" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268438776"/>
+<entry endPc="268439678" name="rez_cmp_local_text_DateLabel" stackId="4" startPc="268438776"/>
+<entry endPc="268439678" name="rez_cmp_local_text_BatteryLabel" stackId="5" startPc="268438776"/>
+<entry endPc="268439678" name="rez_cmp_local_text_WeatherLabel" stackId="6" startPc="268438776"/>
+<entry endPc="268439678" name="rez_cmp_local_text_StepsLabel" stackId="7" startPc="268438776"/>
+<entry endPc="268439678" name="rez_cmp_local_text_ActiveMinutesLabel" stackId="8" startPc="268438776"/>
 </localVars>
 <annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="battery"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MilitaryFormatTitle"/>
 <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
-<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
-<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
-<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="stairs"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="steps"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ForegroundColorTitle"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BatteryRemainingDays"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BatteryRemainingModeTitle"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BatteryRemainingPercent"/>
 </annotations>
 <dataEntryOffsetMappings>
 <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
@@ -139,11 +283,11 @@
 <dataEntry label="globals/MyGarminWFApp" offset="316" parentId="globals" symbolId="MyGarminWFApp" type="class"/>
 <dataEntry label="globals/Rez" offset="395" parentId="globals" symbolId="Rez" type="module"/>
 <dataEntry label="globals/Rez/Drawables" offset="474" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry label="globals/Rez/Layouts" offset="513" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry label="globals/Rez/Menus" offset="552" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry label="globals/Rez/Fonts" offset="583" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry label="globals/Rez/Strings" offset="614" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry label="globals/Rez/JsonData" offset="725" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="537" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="576" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="607" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="638" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="773" parentId="Rez" symbolId="JsonData" type="module"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
@@ -171,41 +315,41 @@
 <functionEntry accessMode="public" name="onHide" parent="MyGarminWFView">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435888" name="onUpdate" parent="MyGarminWFView" startPc="268435574">
+<functionEntry accessMode="public" endPc="268438494" name="onUpdate" parent="MyGarminWFView" startPc="268435574">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435907" name="&lt;init&gt;" parent="Background" startPc="268435889">
+<functionEntry accessMode="public" endPc="268438513" name="&lt;init&gt;" parent="Background" startPc="268438495">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435957" name="initialize" parent="Background" startPc="268435908">
+<functionEntry accessMode="public" endPc="268438563" name="initialize" parent="Background" startPc="268438514">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436021" name="draw" parent="Background" startPc="268435958">
+<functionEntry accessMode="public" endPc="268438627" name="draw" parent="Background" startPc="268438564">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436040" name="&lt;init&gt;" parent="MyGarminWFApp" startPc="268436022">
+<functionEntry accessMode="public" endPc="268438646" name="&lt;init&gt;" parent="MyGarminWFApp" startPc="268438628">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436043" name="onStart" parent="MyGarminWFApp" startPc="268436041">
+<functionEntry accessMode="public" endPc="268438649" name="onStart" parent="MyGarminWFApp" startPc="268438647">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436062" name="onSettingsChanged" parent="MyGarminWFApp" startPc="268436044">
+<functionEntry accessMode="public" endPc="268438668" name="onSettingsChanged" parent="MyGarminWFApp" startPc="268438650">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436105" name="getInitialView" parent="MyGarminWFApp" startPc="268436063">
+<functionEntry accessMode="public" endPc="268438711" name="getInitialView" parent="MyGarminWFApp" startPc="268438669">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436130" name="initialize" parent="MyGarminWFApp" startPc="268436106">
+<functionEntry accessMode="public" endPc="268438736" name="initialize" parent="MyGarminWFApp" startPc="268438712">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436133" name="onStop" parent="MyGarminWFApp" startPc="268436131">
+<functionEntry accessMode="public" endPc="268438739" name="onStop" parent="MyGarminWFApp" startPc="268438737">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436157" name="&lt;init&gt;" parent="Rez" startPc="268436134">
+<functionEntry accessMode="public" endPc="268438763" name="&lt;init&gt;" parent="Rez" startPc="268438740">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -226,7 +370,7 @@
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436387" name="WatchFace" parent="Layouts" startPc="268436158">
+<functionEntry accessMode="public" endPc="268439678" name="WatchFace" parent="Layouts" startPc="268438764">
 <param id="dc"/>
 <documentation/>
 </functionEntry>

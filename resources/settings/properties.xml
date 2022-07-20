@@ -1,7 +1,23 @@
 <properties>
 
     <property id="BackgroundColor" type="number">0x000000</property>
-    <property id="ForegroundColor" type="number">0xFF0000</property>
+    <property id="ForegroundColor" type="number">0xFFFFFF</property>
     <property id="UseMilitaryFormat" type="boolean">false</property>
+    <property id="BatteryRemainingMode" type="number">1</property>
 
+    <property id="Jauge1BackgroundColor" type="number">0xAAAAAA</property>
+    <property id="Jauge1ForegroundColor" type="number">0xFF0000</property>
+    
+    <property id="Jauge2BackgroundColor" type="number">0xAAAAAA</property>
+    <property id="Jauge2ForegroundColor" type="number">0xFF5500</property>
+
+    <property id="Jauge3BackgroundColor" type="number">0xAAAAAA</property>
+    <property id="Jauge3ForegroundColor" type="number">0xFFAA00</property>
+
+    <property id="Jauge4BackgroundColor" type="number">0xAAAAAA</property>
+    <property id="Jauge4ForegroundColor" type="number">0x00FF00</property>
+
+    <property id="Jauge5BackgroundColor" type="number">0xAAAAAA</property>
+    <property id="Jauge5ForegroundColor" type="number">0x00AAFF</property>
+    
 </properties>

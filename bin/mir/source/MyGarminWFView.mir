@@ -8,28 +8,36 @@ import Toybox.Lang;
 import Toybox.System;
 [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 5; ]
 import Toybox.WatchUi;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 6; ]
+import Toybox.Time.Gregorian;
 [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 7; ]
+import Toybox.System;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 8; ]
+import Toybox.Weather;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 9; ]
+import Toybox.ActivityMonitor;
+[ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 11; ]
 class MyGarminWFView extends WatchUi.WatchFace{
-    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 7; ]
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 11; ]
     <init> {
     }
-    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 7; ]
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 11; ]
     static
     <init> {
     }
-    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 9; ]
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 13; ]
     function initialize() as Void {
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_9_26_start:
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 10 8 ]
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_13_26_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 14 8 ]
         %tmp.2 = getv ? :WatchFace;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_9_26_stop:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_13_26_stop:
     }
-    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 14; ]
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 18; ]
     function onLayout(dc as Dc) as Void {
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_14_40_start:
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 15 8 ]
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_18_40_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 19 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -38,145 +46,1002 @@ D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_14_40_start:
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_14_40_stop:
-    }
-    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 21; ]
-    function onShow() as Void {
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_18_40_stop:
     }
     [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 25; ]
+    function onShow() as Void {
+    }
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 29; ]
     function onUpdate(dc as Dc) as Void {
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_start:
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 27 8 ]
-        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_stop" ]
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 32 8 ]
+        %tmp.2 = lgetv %dc;
+        %tmp.3 = getv function %tmp.2 :setColor;
+        %tmp.4 = getm $.Toybox.Graphics;
+        %tmp.5 = getv %tmp.4 :COLOR_TRANSPARENT;
+        %tmp.6 = self;
+        %tmp.7 = getv function %tmp.6 :getApp;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = getv function %tmp.8 :getProperty;
+        %tmp.10 = "BackgroundColor";
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        %tmp.12 = as %tmp.11 Number;
+        invoke %tmp.2 %tmp.3(%tmp.5, %tmp.12);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 33 8 ]
+        %tmp.14 = lgetv %dc;
+        %tmp.15 = getv function %tmp.14 :clear;
+        invoke %tmp.14 %tmp.15();
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 36 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
         %timeFormat.1 = local;
-        %tmp.1 = "$1$:$2$";
-        lputv %timeFormat.1 %tmp.1;
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 28 8 ]
-        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_stop" ]
+        %tmp.16 = "$1$:$2$";
+        lputv %timeFormat.1 %tmp.16;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 37 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
         %clockTime.2 = local;
-        %tmp.2 = getm $.Toybox.System;
-        %tmp.3 = getv function %tmp.2 :getClockTime;
-        %tmp.4 = invoke %tmp.2 %tmp.3();
-        lputv %clockTime.2 %tmp.4;
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 29 8 ]
-        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_stop" ]
+        %tmp.17 = getm $.Toybox.System;
+        %tmp.18 = getv function %tmp.17 :getClockTime;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        lputv %clockTime.2 %tmp.19;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 38 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
         %hours.3 = local;
-        %tmp.6 = lgetv %clockTime.2;
-        %tmp.7 = getv %tmp.6 :hour;
-        lputv %hours.3 %tmp.7;
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 30 8 ]
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_8_if_stmt:
-        %tmp.8 = getm $.Toybox.System;
-        %tmp.9 = getv function %tmp.8 :getDeviceSettings;
-        %tmp.10 = invoke %tmp.8 %tmp.9();
-        %tmp.11 = getv %tmp.10 :is24Hour;
-        %tmp.12 = not %tmp.11;
-        bf %tmp.12 @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_8_if_false;
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_8_if_true:
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_50_start:
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 31 12 ]
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_12_if_stmt:
-        %tmp.14 = lgetv %hours.3;
-        %tmp.15 = 12;
-        %tmp.16 = gt %tmp.14 %tmp.15;
-        bf %tmp.16 @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_12_if_end;
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_12_if_true:
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_28_start:
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 32 16 ]
-        %tmp.18 = lgetv %hours.3;
-        %tmp.19 = 12;
-        %tmp.20 = sub %tmp.18 %tmp.19;
-        lputv %hours.3 %tmp.20;
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_28_stop:
-        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_12_if_end;
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_31_12_if_end:
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_50_stop:
-        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_8_if_end;
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_8_if_false:
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_34_15_start:
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 35 12 ]
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_12_if_stmt:
-        %tmp.21 = self;
-        %tmp.22 = getv function %tmp.21 :getApp;
-        %tmp.23 = invoke %tmp.21 %tmp.22();
-        %tmp.24 = getv function %tmp.23 :getProperty;
-        %tmp.25 = "UseMilitaryFormat";
-        %tmp.26 = invoke %tmp.23 %tmp.24(%tmp.25);
-        bf %tmp.26 @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_12_if_end;
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_12_if_true:
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_59_start:
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 36 16 ]
-        %tmp.27 = "$1$$2$";
-        lputv %timeFormat.1 %tmp.27;
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 37 16 ]
+        %tmp.21 = lgetv %clockTime.2;
+        %tmp.22 = getv %tmp.21 :hour;
+        lputv %hours.3 %tmp.22;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 39 8 ]
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_39_8_if_stmt:
+        %tmp.23 = getm $.Toybox.System;
+        %tmp.24 = getv function %tmp.23 :getDeviceSettings;
+        %tmp.25 = invoke %tmp.23 %tmp.24();
+        %tmp.26 = getv %tmp.25 :is24Hour;
+        %tmp.27 = not %tmp.26;
+        bf %tmp.27 @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_39_8_if_false;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_39_8_if_true:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_39_50_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 40 12 ]
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_40_12_if_stmt:
         %tmp.29 = lgetv %hours.3;
-        %tmp.30 = getv function %tmp.29 :format;
-        %tmp.31 = "%02d";
-        %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
-        lputv %hours.3 %tmp.32;
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_59_stop:
-        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_12_if_end;
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_35_12_if_end:
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_34_15_stop:
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_30_8_if_end:
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 40 8 ]
-        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_stop" ]
-        %timeString.4 = local;
-        %tmp.33 = getm $.Toybox.Lang;
-        %tmp.34 = getv function %tmp.33 :format;
-        %tmp.36 = lgetv %timeFormat.1;
-        %tmp.37 = newa 2;
-        %tmp.39 = lgetv %hours.3;
-        %tmp.40 = dup %tmp.37;
-        %tmp.41 = aputv %tmp.40 0 %tmp.39;
-        %tmp.43 = lgetv %clockTime.2;
-        %tmp.44 = getv %tmp.43 :min;
+        %tmp.30 = 12;
+        %tmp.31 = gt %tmp.29 %tmp.30;
+        bf %tmp.31 @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_40_12_if_end;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_40_12_if_true:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_40_28_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 41 16 ]
+        %tmp.33 = lgetv %hours.3;
+        %tmp.34 = 12;
+        %tmp.35 = sub %tmp.33 %tmp.34;
+        lputv %hours.3 %tmp.35;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_40_28_stop:
+        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_40_12_if_end;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_40_12_if_end:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_39_50_stop:
+        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_39_8_if_end;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_39_8_if_false:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_43_15_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 44 12 ]
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_44_12_if_stmt:
+        %tmp.36 = self;
+        %tmp.37 = getv function %tmp.36 :getApp;
+        %tmp.38 = invoke %tmp.36 %tmp.37();
+        %tmp.39 = getv function %tmp.38 :getProperty;
+        %tmp.40 = "UseMilitaryFormat";
+        %tmp.41 = invoke %tmp.38 %tmp.39(%tmp.40);
+        bf %tmp.41 @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_44_12_if_end;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_44_12_if_true:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_44_59_start:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 45 16 ]
+        %tmp.42 = "$1$$2$";
+        lputv %timeFormat.1 %tmp.42;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 46 16 ]
+        %tmp.44 = lgetv %hours.3;
         %tmp.45 = getv function %tmp.44 :format;
         %tmp.46 = "%02d";
         %tmp.47 = invoke %tmp.44 %tmp.45(%tmp.46);
-        %tmp.48 = dup %tmp.41;
-        %tmp.49 = aputv %tmp.48 1 %tmp.47;
-        %tmp.50 = invoke %tmp.33 %tmp.34(%tmp.36, %tmp.49);
-        lputv %timeString.4 %tmp.50;
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 43 8 ]
-        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_stop" ]
-        %view.5 = local;
-        %tmp.52 = getv ? :View;
-        %tmp.53 = getv function %tmp.52 :findDrawableById;
-        %tmp.54 = "TimeLabel";
-        %tmp.55 = invoke %tmp.52 %tmp.53(%tmp.54);
-        %tmp.56 = as %tmp.55 Text;
-        lputv %view.5 %tmp.56;
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 44 8 ]
-        %tmp.58 = lgetv %view.5;
-        %tmp.59 = getv function %tmp.58 :setColor;
-        %tmp.60 = self;
-        %tmp.61 = getv function %tmp.60 :getApp;
-        %tmp.62 = invoke %tmp.60 %tmp.61();
-        %tmp.63 = getv function %tmp.62 :getProperty;
-        %tmp.64 = "ForegroundColor";
-        %tmp.65 = invoke %tmp.62 %tmp.63(%tmp.64);
-        %tmp.66 = as %tmp.65 Number;
-        invoke %tmp.58 %tmp.59(%tmp.66);
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 45 8 ]
-        %tmp.68 = lgetv %view.5;
-        %tmp.69 = getv function %tmp.68 :setText;
-        %tmp.71 = lgetv %timeString.4;
-        invoke %tmp.68 %tmp.69(%tmp.71);
-[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 48 8 ]
-        %tmp.73 = getv ? :View;
-        %tmp.74 = getv function %tmp.73 :onUpdate;
-        %tmp.76 = lgetv %dc;
-        invoke %tmp.73 %tmp.74(%tmp.76);
-D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_25_40_stop:
+        lputv %hours.3 %tmp.47;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_44_59_stop:
+        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_44_12_if_end;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_44_12_if_end:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_43_15_stop:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_39_8_if_end:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 49 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %timeString.4 = local;
+        %tmp.48 = getm $.Toybox.Lang;
+        %tmp.49 = getv function %tmp.48 :format;
+        %tmp.51 = lgetv %timeFormat.1;
+        %tmp.52 = newa 2;
+        %tmp.54 = lgetv %hours.3;
+        %tmp.55 = dup %tmp.52;
+        %tmp.56 = aputv %tmp.55 0 %tmp.54;
+        %tmp.58 = lgetv %clockTime.2;
+        %tmp.59 = getv %tmp.58 :min;
+        %tmp.60 = getv function %tmp.59 :format;
+        %tmp.61 = "%02d";
+        %tmp.62 = invoke %tmp.59 %tmp.60(%tmp.61);
+        %tmp.63 = dup %tmp.56;
+        %tmp.64 = aputv %tmp.63 1 %tmp.62;
+        %tmp.65 = invoke %tmp.48 %tmp.49(%tmp.51, %tmp.64);
+        lputv %timeString.4 %tmp.65;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 52 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %today.5 = local;
+        %tmp.66 = getm $.Toybox.Time.Gregorian;
+        %tmp.67 = getv function %tmp.66 :info;
+        %tmp.69 = getv ? :Time;
+        %tmp.70 = getv function %tmp.69 :now;
+        %tmp.71 = invoke %tmp.69 %tmp.70();
+        %tmp.73 = getv ? :Time;
+        %tmp.74 = getv %tmp.73 :FORMAT_LONG;
+        %tmp.75 = invoke %tmp.66 %tmp.67(%tmp.71, %tmp.74);
+        lputv %today.5 %tmp.75;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 53 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %dateString.6 = local;
+        %tmp.76 = getm $.Toybox.Lang;
+        %tmp.77 = getv function %tmp.76 :format;
+        %tmp.78 = "$1$ $2$";
+        %tmp.79 = newa 2;
+        %tmp.81 = lgetv %today.5;
+        %tmp.82 = getv %tmp.81 :day_of_week;
+        %tmp.83 = dup %tmp.79;
+        %tmp.84 = aputv %tmp.83 0 %tmp.82;
+        %tmp.86 = lgetv %today.5;
+        %tmp.87 = getv %tmp.86 :day;
+        %tmp.88 = dup %tmp.84;
+        %tmp.89 = aputv %tmp.88 1 %tmp.87;
+        %tmp.90 = invoke %tmp.76 %tmp.77(%tmp.78, %tmp.89);
+        lputv %dateString.6 %tmp.90;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 56 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %battery.7 = local;
+        %tmp.91 = getm $.Toybox.System;
+        %tmp.92 = getv function %tmp.91 :getSystemStats;
+        %tmp.93 = invoke %tmp.91 %tmp.92();
+        lputv %battery.7 %tmp.93;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 57 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %batteryVal.8 = local;
+        %tmp.94 = null;
+        lputv %batteryVal.8 %tmp.94;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 58 8 ]
+        %tmp.95 = self;
+        %tmp.96 = getv function %tmp.95 :getApp;
+        %tmp.97 = invoke %tmp.95 %tmp.96();
+        %tmp.98 = getv function %tmp.97 :getProperty;
+        %tmp.99 = "BatteryRemainingMode";
+        %tmp.100 = invoke %tmp.97 %tmp.98(%tmp.99);
+        push %tmp.100;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_58_8_switchCaseBegin:
+        %tmp.101 = dup %tmp.100;
+        %tmp.102 = 1;
+        %tmp.103 = getv function %tmp.101 :equals;
+        %tmp.104 = invoke %tmp.101 %tmp.103 (%tmp.102);
+        bt %tmp.104 @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_59_12;
+        %tmp.105 = dup %tmp.100;
+        %tmp.106 = 2;
+        %tmp.107 = getv function %tmp.105 :equals;
+        %tmp.108 = invoke %tmp.105 %tmp.107 (%tmp.106);
+        bt %tmp.108 @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_62_12;
+        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_58_8_defaultCodeBegin;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_59_12:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 60 16 ]
+        %tmp.110 = lgetv %battery.7;
+        %tmp.111 = getv %tmp.110 :battery;
+        %tmp.112 = getv function %tmp.111 :format;
+        %tmp.113 = "%d";
+        %tmp.114 = invoke %tmp.111 %tmp.112(%tmp.113);
+        %tmp.115 = "%";
+        %tmp.116 = add %tmp.114 %tmp.115;
+        lputv %batteryVal.8 %tmp.116;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 61 16 ]
+        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_58_8_switchCaseEnd;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_62_12:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 63 16 ]
+        %tmp.118 = lgetv %battery.7;
+        %tmp.119 = getv %tmp.118 :batteryInDays;
+        %tmp.120 = getv function %tmp.119 :format;
+        %tmp.121 = "%d";
+        %tmp.122 = invoke %tmp.119 %tmp.120(%tmp.121);
+        %tmp.123 = "D";
+        %tmp.124 = add %tmp.122 %tmp.123;
+        lputv %batteryVal.8 %tmp.124;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 64 16 ]
+        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_58_8_switchCaseEnd;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_65_12:
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_58_8_defaultCodeBegin:
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 66 16 ]
+        %tmp.125 = "ERROR";
+        lputv %batteryVal.8 %tmp.125;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 67 16 ]
+        goto @D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_58_8_switchCaseEnd;
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_58_8_switchCaseEnd:
+        pop;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 69 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %batteryString.9 = local;
+        %tmp.127 = lgetv %batteryVal.8;
+        lputv %batteryString.9 %tmp.127;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 72 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %weather.10 = local;
+        %tmp.128 = getm $.Toybox.Weather;
+        %tmp.129 = getv function %tmp.128 :getCurrentConditions;
+        %tmp.130 = invoke %tmp.128 %tmp.129();
+        lputv %weather.10 %tmp.130;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 73 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %temperatureString.11 = local;
+        %tmp.132 = lgetv %weather.10;
+        %tmp.133 = getv %tmp.132 :temperature;
+        %tmp.134 = getv function %tmp.133 :format;
+        %tmp.135 = "%d";
+        %tmp.136 = invoke %tmp.133 %tmp.134(%tmp.135);
+        %tmp.137 = "°";
+        %tmp.138 = add %tmp.136 %tmp.137;
+        lputv %temperatureString.11 %tmp.138;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 74 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %precipitationString.12 = local;
+        %tmp.140 = lgetv %weather.10;
+        %tmp.141 = getv %tmp.140 :precipitationChance;
+        %tmp.142 = getv function %tmp.141 :format;
+        %tmp.143 = "%d";
+        %tmp.144 = invoke %tmp.141 %tmp.142(%tmp.143);
+        %tmp.145 = "%";
+        %tmp.146 = add %tmp.144 %tmp.145;
+        lputv %precipitationString.12 %tmp.146;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 77 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %monitoring.13 = local;
+        %tmp.147 = getm $.Toybox.ActivityMonitor;
+        %tmp.148 = getv function %tmp.147 :getInfo;
+        %tmp.149 = invoke %tmp.147 %tmp.148();
+        lputv %monitoring.13 %tmp.149;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 78 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %stepsString.14 = local;
+        %tmp.151 = lgetv %monitoring.13;
+        %tmp.152 = getv %tmp.151 :steps;
+        lputv %stepsString.14 %tmp.152;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 79 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %stepsGoalString.15 = local;
+        %tmp.154 = lgetv %monitoring.13;
+        %tmp.155 = getv %tmp.154 :stepGoal;
+        lputv %stepsGoalString.15 %tmp.155;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 80 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %activeMinutesString.16 = local;
+        %tmp.157 = lgetv %monitoring.13;
+        %tmp.158 = getv %tmp.157 :activeMinutesWeek;
+        %tmp.159 = getv %tmp.158 :total;
+        lputv %activeMinutesString.16 %tmp.159;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 81 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %activeMinutesGoalString.17 = local;
+        %tmp.161 = lgetv %monitoring.13;
+        %tmp.162 = getv %tmp.161 :activeMinutesWeekGoal;
+        lputv %activeMinutesGoalString.17 %tmp.162;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 82 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %floorsClimbedString.18 = local;
+        %tmp.164 = lgetv %monitoring.13;
+        %tmp.165 = getv %tmp.164 :floorsClimbed;
+        lputv %floorsClimbedString.18 %tmp.165;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 83 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %floorsClimbedGoalString.19 = local;
+        %tmp.167 = lgetv %monitoring.13;
+        %tmp.168 = getv %tmp.167 :floorsClimbedGoal;
+        lputv %floorsClimbedGoalString.19 %tmp.168;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 84 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %caloriesString.20 = local;
+        %tmp.170 = lgetv %monitoring.13;
+        %tmp.171 = getv %tmp.170 :calories;
+        lputv %caloriesString.20 %tmp.171;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 85 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %caloriesGoalString.21 = local;
+        %tmp.172 = 3000;
+        lputv %caloriesGoalString.21 %tmp.172;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 88 8 ]
+        %tmp.173 = 2500;
+        lputv %stepsString.14 %tmp.173;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 89 8 ]
+        %tmp.174 = 100;
+        lputv %activeMinutesString.16 %tmp.174;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 90 8 ]
+        %tmp.175 = 7;
+        lputv %floorsClimbedString.18 %tmp.175;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 91 8 ]
+        %tmp.176 = 1000;
+        lputv %caloriesString.20 %tmp.176;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 96 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %viewTime.22 = local;
+        %tmp.178 = getv ? :View;
+        %tmp.179 = getv function %tmp.178 :findDrawableById;
+        %tmp.180 = "TimeLabel";
+        %tmp.181 = invoke %tmp.178 %tmp.179(%tmp.180);
+        %tmp.182 = as %tmp.181 Text;
+        lputv %viewTime.22 %tmp.182;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 97 8 ]
+        %tmp.184 = lgetv %viewTime.22;
+        %tmp.185 = getv function %tmp.184 :setColor;
+        %tmp.186 = self;
+        %tmp.187 = getv function %tmp.186 :getApp;
+        %tmp.188 = invoke %tmp.186 %tmp.187();
+        %tmp.189 = getv function %tmp.188 :getProperty;
+        %tmp.190 = "ForegroundColor";
+        %tmp.191 = invoke %tmp.188 %tmp.189(%tmp.190);
+        %tmp.192 = as %tmp.191 Number;
+        invoke %tmp.184 %tmp.185(%tmp.192);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 98 8 ]
+        %tmp.194 = lgetv %viewTime.22;
+        %tmp.195 = getv function %tmp.194 :setText;
+        %tmp.197 = lgetv %timeString.4;
+        invoke %tmp.194 %tmp.195(%tmp.197);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 100 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %viewDate.23 = local;
+        %tmp.199 = getv ? :View;
+        %tmp.200 = getv function %tmp.199 :findDrawableById;
+        %tmp.201 = "DateLabel";
+        %tmp.202 = invoke %tmp.199 %tmp.200(%tmp.201);
+        %tmp.203 = as %tmp.202 Text;
+        lputv %viewDate.23 %tmp.203;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 101 8 ]
+        %tmp.205 = lgetv %viewDate.23;
+        %tmp.206 = getv function %tmp.205 :setColor;
+        %tmp.207 = self;
+        %tmp.208 = getv function %tmp.207 :getApp;
+        %tmp.209 = invoke %tmp.207 %tmp.208();
+        %tmp.210 = getv function %tmp.209 :getProperty;
+        %tmp.211 = "ForegroundColor";
+        %tmp.212 = invoke %tmp.209 %tmp.210(%tmp.211);
+        %tmp.213 = as %tmp.212 Number;
+        invoke %tmp.205 %tmp.206(%tmp.213);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 102 8 ]
+        %tmp.215 = lgetv %viewDate.23;
+        %tmp.216 = getv function %tmp.215 :setText;
+        %tmp.218 = lgetv %dateString.6;
+        invoke %tmp.215 %tmp.216(%tmp.218);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 104 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %viewBattery.24 = local;
+        %tmp.220 = getv ? :View;
+        %tmp.221 = getv function %tmp.220 :findDrawableById;
+        %tmp.222 = "BatteryLabel";
+        %tmp.223 = invoke %tmp.220 %tmp.221(%tmp.222);
+        %tmp.224 = as %tmp.223 Text;
+        lputv %viewBattery.24 %tmp.224;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 105 8 ]
+        %tmp.226 = lgetv %viewBattery.24;
+        %tmp.227 = getv function %tmp.226 :setColor;
+        %tmp.228 = self;
+        %tmp.229 = getv function %tmp.228 :getApp;
+        %tmp.230 = invoke %tmp.228 %tmp.229();
+        %tmp.231 = getv function %tmp.230 :getProperty;
+        %tmp.232 = "ForegroundColor";
+        %tmp.233 = invoke %tmp.230 %tmp.231(%tmp.232);
+        %tmp.234 = as %tmp.233 Number;
+        invoke %tmp.226 %tmp.227(%tmp.234);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 106 8 ]
+        %tmp.236 = lgetv %viewBattery.24;
+        %tmp.237 = getv function %tmp.236 :setText;
+        %tmp.239 = lgetv %batteryString.9;
+        invoke %tmp.236 %tmp.237(%tmp.239);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 108 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %viewWeather.25 = local;
+        %tmp.241 = getv ? :View;
+        %tmp.242 = getv function %tmp.241 :findDrawableById;
+        %tmp.243 = "WeatherLabel";
+        %tmp.244 = invoke %tmp.241 %tmp.242(%tmp.243);
+        %tmp.245 = as %tmp.244 Text;
+        lputv %viewWeather.25 %tmp.245;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 109 8 ]
+        %tmp.247 = lgetv %viewWeather.25;
+        %tmp.248 = getv function %tmp.247 :setColor;
+        %tmp.249 = self;
+        %tmp.250 = getv function %tmp.249 :getApp;
+        %tmp.251 = invoke %tmp.249 %tmp.250();
+        %tmp.252 = getv function %tmp.251 :getProperty;
+        %tmp.253 = "ForegroundColor";
+        %tmp.254 = invoke %tmp.251 %tmp.252(%tmp.253);
+        %tmp.255 = as %tmp.254 Number;
+        invoke %tmp.247 %tmp.248(%tmp.255);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 110 8 ]
+        %tmp.257 = lgetv %viewWeather.25;
+        %tmp.258 = getv function %tmp.257 :setText;
+        %tmp.260 = lgetv %temperatureString.11;
+        %tmp.261 = " - ";
+        %tmp.262 = add %tmp.260 %tmp.261;
+        %tmp.264 = lgetv %precipitationString.12;
+        %tmp.265 = add %tmp.262 %tmp.264;
+        invoke %tmp.257 %tmp.258(%tmp.265);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 112 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %viewSteps.26 = local;
+        %tmp.267 = getv ? :View;
+        %tmp.268 = getv function %tmp.267 :findDrawableById;
+        %tmp.269 = "StepsLabel";
+        %tmp.270 = invoke %tmp.267 %tmp.268(%tmp.269);
+        %tmp.271 = as %tmp.270 Text;
+        lputv %viewSteps.26 %tmp.271;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 113 8 ]
+        %tmp.273 = lgetv %viewSteps.26;
+        %tmp.274 = getv function %tmp.273 :setColor;
+        %tmp.275 = self;
+        %tmp.276 = getv function %tmp.275 :getApp;
+        %tmp.277 = invoke %tmp.275 %tmp.276();
+        %tmp.278 = getv function %tmp.277 :getProperty;
+        %tmp.279 = "ForegroundColor";
+        %tmp.280 = invoke %tmp.277 %tmp.278(%tmp.279);
+        %tmp.281 = as %tmp.280 Number;
+        invoke %tmp.273 %tmp.274(%tmp.281);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 114 8 ]
+        %tmp.283 = lgetv %viewSteps.26;
+        %tmp.284 = getv function %tmp.283 :setText;
+        %tmp.286 = lgetv %stepsString.14;
+        %tmp.287 = " / ";
+        %tmp.288 = add %tmp.286 %tmp.287;
+        %tmp.290 = lgetv %stepsGoalString.15;
+        %tmp.291 = add %tmp.288 %tmp.290;
+        invoke %tmp.283 %tmp.284(%tmp.291);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 116 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %viewActiveMinutes.27 = local;
+        %tmp.293 = getv ? :View;
+        %tmp.294 = getv function %tmp.293 :findDrawableById;
+        %tmp.295 = "ActiveMinutesLabel";
+        %tmp.296 = invoke %tmp.293 %tmp.294(%tmp.295);
+        %tmp.297 = as %tmp.296 Text;
+        lputv %viewActiveMinutes.27 %tmp.297;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 117 8 ]
+        %tmp.299 = lgetv %viewActiveMinutes.27;
+        %tmp.300 = getv function %tmp.299 :setColor;
+        %tmp.301 = self;
+        %tmp.302 = getv function %tmp.301 :getApp;
+        %tmp.303 = invoke %tmp.301 %tmp.302();
+        %tmp.304 = getv function %tmp.303 :getProperty;
+        %tmp.305 = "ForegroundColor";
+        %tmp.306 = invoke %tmp.303 %tmp.304(%tmp.305);
+        %tmp.307 = as %tmp.306 Number;
+        invoke %tmp.299 %tmp.300(%tmp.307);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 118 8 ]
+        %tmp.309 = lgetv %viewActiveMinutes.27;
+        %tmp.310 = getv function %tmp.309 :setText;
+        %tmp.312 = lgetv %activeMinutesString.16;
+        %tmp.313 = " / ";
+        %tmp.314 = add %tmp.312 %tmp.313;
+        %tmp.316 = lgetv %activeMinutesGoalString.17;
+        %tmp.317 = add %tmp.314 %tmp.316;
+        invoke %tmp.309 %tmp.310(%tmp.317);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 123 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %widthScreen.28 = local;
+        %tmp.319 = lgetv %dc;
+        %tmp.320 = getv function %tmp.319 :getWidth;
+        %tmp.321 = invoke %tmp.319 %tmp.320();
+        lputv %widthScreen.28 %tmp.321;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 124 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %heightScreen.29 = local;
+        %tmp.323 = lgetv %dc;
+        %tmp.324 = getv function %tmp.323 :getHeight;
+        %tmp.325 = invoke %tmp.323 %tmp.324();
+        lputv %heightScreen.29 %tmp.325;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 125 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %width.30 = local;
+        %tmp.326 = 152;
+        lputv %width.30 %tmp.326;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 126 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %height.31 = local;
+        %tmp.327 = 20;
+        lputv %height.31 %tmp.327;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 127 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %radius.32 = local;
+        %tmp.328 = 2;
+        lputv %radius.32 %tmp.328;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 128 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %x.33 = local;
+        %tmp.329 = 30;
+        lputv %x.33 %tmp.329;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 129 8 ]
+        [ "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_start" "D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop" ]
+        %y.34 = local;
+        %tmp.331 = lgetv %heightScreen.29;
+        %tmp.332 = 2;
+        %tmp.333 = div %tmp.331 %tmp.332;
+        %tmp.335 = lgetv %height.31;
+        %tmp.336 = sub %tmp.333 %tmp.335;
+        %tmp.337 = 2;
+        %tmp.338 = sub %tmp.336 %tmp.337;
+        lputv %y.34 %tmp.338;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 132 8 ]
+        %tmp.340 = lgetv %dc;
+        %tmp.341 = getv function %tmp.340 :setColor;
+        %tmp.342 = getm $.Toybox.Graphics;
+        %tmp.343 = getv %tmp.342 :COLOR_WHITE;
+        %tmp.344 = getm $.Toybox.Graphics;
+        %tmp.345 = getv %tmp.344 :COLOR_TRANSPARENT;
+        invoke %tmp.340 %tmp.341(%tmp.343, %tmp.345);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 133 8 ]
+        %tmp.347 = lgetv %dc;
+        %tmp.348 = getv function %tmp.347 :drawText;
+        %tmp.350 = lgetv %x.33;
+        %tmp.351 = 1;
+        %tmp.352 = sub %tmp.350 %tmp.351;
+        %tmp.353 = 40;
+        %tmp.354 = getm $.Toybox.Graphics;
+        %tmp.355 = getv %tmp.354 :FONT_NUMBER_MEDIUM;
+        %tmp.357 = lgetv %timeString.4;
+        %tmp.358 = getm $.Toybox.Graphics;
+        %tmp.359 = getv %tmp.358 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.347 %tmp.348(%tmp.352, %tmp.353, %tmp.355, %tmp.357, %tmp.359);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 136 8 ]
+        %tmp.361 = lgetv %dc;
+        %tmp.362 = getv function %tmp.361 :setColor;
+        %tmp.363 = self;
+        %tmp.364 = getv function %tmp.363 :getApp;
+        %tmp.365 = invoke %tmp.363 %tmp.364();
+        %tmp.366 = getv function %tmp.365 :getProperty;
+        %tmp.367 = "Jauge1BackgroundColor";
+        %tmp.368 = invoke %tmp.365 %tmp.366(%tmp.367);
+        %tmp.369 = getm $.Toybox.Graphics;
+        %tmp.370 = getv %tmp.369 :COLOR_TRANSPARENT;
+        invoke %tmp.361 %tmp.362(%tmp.368, %tmp.370);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 137 8 ]
+        %tmp.372 = lgetv %dc;
+        %tmp.373 = getv function %tmp.372 :fillRoundedRectangle;
+        %tmp.375 = lgetv %x.33;
+        %tmp.376 = 1;
+        %tmp.377 = sub %tmp.375 %tmp.376;
+        %tmp.379 = lgetv %y.34;
+        %tmp.380 = 1;
+        %tmp.381 = sub %tmp.379 %tmp.380;
+        %tmp.383 = lgetv %width.30;
+        %tmp.384 = 2;
+        %tmp.385 = add %tmp.383 %tmp.384;
+        %tmp.387 = lgetv %height.31;
+        %tmp.388 = 2;
+        %tmp.389 = add %tmp.387 %tmp.388;
+        %tmp.391 = lgetv %radius.32;
+        invoke %tmp.372 %tmp.373(%tmp.377, %tmp.381, %tmp.385, %tmp.389, %tmp.391);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 138 8 ]
+        %tmp.393 = lgetv %dc;
+        %tmp.394 = getv function %tmp.393 :setColor;
+        %tmp.395 = self;
+        %tmp.396 = getv function %tmp.395 :getApp;
+        %tmp.397 = invoke %tmp.395 %tmp.396();
+        %tmp.398 = getv function %tmp.397 :getProperty;
+        %tmp.399 = "Jauge1ForegroundColor";
+        %tmp.400 = invoke %tmp.397 %tmp.398(%tmp.399);
+        %tmp.401 = getm $.Toybox.Graphics;
+        %tmp.402 = getv %tmp.401 :COLOR_TRANSPARENT;
+        invoke %tmp.393 %tmp.394(%tmp.400, %tmp.402);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 139 8 ]
+        %tmp.404 = lgetv %dc;
+        %tmp.405 = getv function %tmp.404 :fillRectangle;
+        %tmp.407 = lgetv %x.33;
+        %tmp.409 = lgetv %y.34;
+        %tmp.411 = lgetv %width.30;
+        %tmp.413 = lgetv %battery.7;
+        %tmp.414 = getv %tmp.413 :battery;
+        %tmp.415 = 100;
+        %tmp.416 = div %tmp.414 %tmp.415;
+        %tmp.417 = mul %tmp.411 %tmp.416;
+        %tmp.419 = lgetv %height.31;
+        invoke %tmp.404 %tmp.405(%tmp.407, %tmp.409, %tmp.417, %tmp.419);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 140 8 ]
+        %tmp.421 = lgetv %dc;
+        %tmp.422 = getv function %tmp.421 :setColor;
+        %tmp.423 = getm $.Toybox.Graphics;
+        %tmp.424 = getv %tmp.423 :COLOR_WHITE;
+        %tmp.425 = getm $.Toybox.Graphics;
+        %tmp.426 = getv %tmp.425 :COLOR_TRANSPARENT;
+        invoke %tmp.421 %tmp.422(%tmp.424, %tmp.426);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 141 8 ]
+        %tmp.428 = lgetv %dc;
+        %tmp.429 = getv function %tmp.428 :drawBitmap;
+        %tmp.431 = lgetv %x.33;
+        %tmp.432 = 5;
+        %tmp.433 = add %tmp.431 %tmp.432;
+        %tmp.435 = lgetv %y.34;
+        %tmp.436 = getm $.Toybox.WatchUi;
+        %tmp.437 = getv function %tmp.436 :loadResource;
+        %tmp.439 = getv ? :Rez;
+        %tmp.440 = getv %tmp.439 :Drawables;
+        %tmp.441 = getv %tmp.440 :battery;
+        %tmp.442 = invoke %tmp.436 %tmp.437(%tmp.441);
+        invoke %tmp.428 %tmp.429(%tmp.433, %tmp.435, %tmp.442);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 145 8 ]
+        %tmp.443 = lgetv %y.34;
+        %tmp.445 = lgetv %height.31;
+        %tmp.446 = 4;
+        %tmp.447 = add %tmp.445 %tmp.446;
+        %tmp.448 = add %tmp.443 %tmp.447;
+        lputv %y.34 %tmp.448;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 146 8 ]
+        %tmp.450 = lgetv %dc;
+        %tmp.451 = getv function %tmp.450 :setColor;
+        %tmp.452 = self;
+        %tmp.453 = getv function %tmp.452 :getApp;
+        %tmp.454 = invoke %tmp.452 %tmp.453();
+        %tmp.455 = getv function %tmp.454 :getProperty;
+        %tmp.456 = "Jauge2BackgroundColor";
+        %tmp.457 = invoke %tmp.454 %tmp.455(%tmp.456);
+        %tmp.458 = getm $.Toybox.Graphics;
+        %tmp.459 = getv %tmp.458 :COLOR_TRANSPARENT;
+        invoke %tmp.450 %tmp.451(%tmp.457, %tmp.459);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 147 8 ]
+        %tmp.461 = lgetv %dc;
+        %tmp.462 = getv function %tmp.461 :fillRoundedRectangle;
+        %tmp.464 = lgetv %x.33;
+        %tmp.465 = 1;
+        %tmp.466 = sub %tmp.464 %tmp.465;
+        %tmp.468 = lgetv %y.34;
+        %tmp.469 = 1;
+        %tmp.470 = sub %tmp.468 %tmp.469;
+        %tmp.472 = lgetv %width.30;
+        %tmp.473 = 2;
+        %tmp.474 = add %tmp.472 %tmp.473;
+        %tmp.476 = lgetv %height.31;
+        %tmp.477 = 2;
+        %tmp.478 = add %tmp.476 %tmp.477;
+        %tmp.480 = lgetv %radius.32;
+        invoke %tmp.461 %tmp.462(%tmp.466, %tmp.470, %tmp.474, %tmp.478, %tmp.480);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 148 8 ]
+        %tmp.482 = lgetv %dc;
+        %tmp.483 = getv function %tmp.482 :setColor;
+        %tmp.484 = self;
+        %tmp.485 = getv function %tmp.484 :getApp;
+        %tmp.486 = invoke %tmp.484 %tmp.485();
+        %tmp.487 = getv function %tmp.486 :getProperty;
+        %tmp.488 = "Jauge2ForegroundColor";
+        %tmp.489 = invoke %tmp.486 %tmp.487(%tmp.488);
+        %tmp.490 = getm $.Toybox.Graphics;
+        %tmp.491 = getv %tmp.490 :COLOR_TRANSPARENT;
+        invoke %tmp.482 %tmp.483(%tmp.489, %tmp.491);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 149 8 ]
+        %tmp.493 = lgetv %dc;
+        %tmp.494 = getv function %tmp.493 :fillRectangle;
+        %tmp.496 = lgetv %x.33;
+        %tmp.498 = lgetv %y.34;
+        %tmp.500 = lgetv %width.30;
+        %tmp.502 = lgetv %stepsString.14;
+        %tmp.503 = getv function %tmp.502 :toFloat;
+        %tmp.504 = invoke %tmp.502 %tmp.503();
+        %tmp.506 = lgetv %stepsGoalString.15;
+        %tmp.507 = getv function %tmp.506 :toFloat;
+        %tmp.508 = invoke %tmp.506 %tmp.507();
+        %tmp.509 = div %tmp.504 %tmp.508;
+        %tmp.510 = mul %tmp.500 %tmp.509;
+        %tmp.512 = lgetv %height.31;
+        invoke %tmp.493 %tmp.494(%tmp.496, %tmp.498, %tmp.510, %tmp.512);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 150 8 ]
+        %tmp.514 = lgetv %dc;
+        %tmp.515 = getv function %tmp.514 :setColor;
+        %tmp.516 = getm $.Toybox.Graphics;
+        %tmp.517 = getv %tmp.516 :COLOR_WHITE;
+        %tmp.518 = getm $.Toybox.Graphics;
+        %tmp.519 = getv %tmp.518 :COLOR_TRANSPARENT;
+        invoke %tmp.514 %tmp.515(%tmp.517, %tmp.519);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 151 8 ]
+        %tmp.521 = lgetv %dc;
+        %tmp.522 = getv function %tmp.521 :drawBitmap;
+        %tmp.524 = lgetv %x.33;
+        %tmp.525 = 5;
+        %tmp.526 = add %tmp.524 %tmp.525;
+        %tmp.528 = lgetv %y.34;
+        %tmp.529 = getm $.Toybox.WatchUi;
+        %tmp.530 = getv function %tmp.529 :loadResource;
+        %tmp.532 = getv ? :Rez;
+        %tmp.533 = getv %tmp.532 :Drawables;
+        %tmp.534 = getv %tmp.533 :steps;
+        %tmp.535 = invoke %tmp.529 %tmp.530(%tmp.534);
+        invoke %tmp.521 %tmp.522(%tmp.526, %tmp.528, %tmp.535);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 155 8 ]
+        %tmp.536 = lgetv %y.34;
+        %tmp.538 = lgetv %height.31;
+        %tmp.539 = 4;
+        %tmp.540 = add %tmp.538 %tmp.539;
+        %tmp.541 = add %tmp.536 %tmp.540;
+        lputv %y.34 %tmp.541;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 156 8 ]
+        %tmp.543 = lgetv %dc;
+        %tmp.544 = getv function %tmp.543 :setColor;
+        %tmp.545 = self;
+        %tmp.546 = getv function %tmp.545 :getApp;
+        %tmp.547 = invoke %tmp.545 %tmp.546();
+        %tmp.548 = getv function %tmp.547 :getProperty;
+        %tmp.549 = "Jauge3BackgroundColor";
+        %tmp.550 = invoke %tmp.547 %tmp.548(%tmp.549);
+        %tmp.551 = getm $.Toybox.Graphics;
+        %tmp.552 = getv %tmp.551 :COLOR_TRANSPARENT;
+        invoke %tmp.543 %tmp.544(%tmp.550, %tmp.552);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 157 8 ]
+        %tmp.554 = lgetv %dc;
+        %tmp.555 = getv function %tmp.554 :fillRoundedRectangle;
+        %tmp.557 = lgetv %x.33;
+        %tmp.558 = 1;
+        %tmp.559 = sub %tmp.557 %tmp.558;
+        %tmp.561 = lgetv %y.34;
+        %tmp.562 = 1;
+        %tmp.563 = sub %tmp.561 %tmp.562;
+        %tmp.565 = lgetv %width.30;
+        %tmp.566 = 2;
+        %tmp.567 = add %tmp.565 %tmp.566;
+        %tmp.569 = lgetv %height.31;
+        %tmp.570 = 2;
+        %tmp.571 = add %tmp.569 %tmp.570;
+        %tmp.573 = lgetv %radius.32;
+        invoke %tmp.554 %tmp.555(%tmp.559, %tmp.563, %tmp.567, %tmp.571, %tmp.573);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 158 8 ]
+        %tmp.575 = lgetv %dc;
+        %tmp.576 = getv function %tmp.575 :setColor;
+        %tmp.577 = self;
+        %tmp.578 = getv function %tmp.577 :getApp;
+        %tmp.579 = invoke %tmp.577 %tmp.578();
+        %tmp.580 = getv function %tmp.579 :getProperty;
+        %tmp.581 = "Jauge3ForegroundColor";
+        %tmp.582 = invoke %tmp.579 %tmp.580(%tmp.581);
+        %tmp.583 = getm $.Toybox.Graphics;
+        %tmp.584 = getv %tmp.583 :COLOR_TRANSPARENT;
+        invoke %tmp.575 %tmp.576(%tmp.582, %tmp.584);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 159 8 ]
+        %tmp.586 = lgetv %dc;
+        %tmp.587 = getv function %tmp.586 :fillRectangle;
+        %tmp.589 = lgetv %x.33;
+        %tmp.591 = lgetv %y.34;
+        %tmp.593 = lgetv %width.30;
+        %tmp.595 = lgetv %activeMinutesString.16;
+        %tmp.596 = getv function %tmp.595 :toFloat;
+        %tmp.597 = invoke %tmp.595 %tmp.596();
+        %tmp.599 = lgetv %activeMinutesGoalString.17;
+        %tmp.600 = getv function %tmp.599 :toFloat;
+        %tmp.601 = invoke %tmp.599 %tmp.600();
+        %tmp.602 = div %tmp.597 %tmp.601;
+        %tmp.603 = mul %tmp.593 %tmp.602;
+        %tmp.605 = lgetv %height.31;
+        invoke %tmp.586 %tmp.587(%tmp.589, %tmp.591, %tmp.603, %tmp.605);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 160 8 ]
+        %tmp.607 = lgetv %dc;
+        %tmp.608 = getv function %tmp.607 :setColor;
+        %tmp.609 = getm $.Toybox.Graphics;
+        %tmp.610 = getv %tmp.609 :COLOR_WHITE;
+        %tmp.611 = getm $.Toybox.Graphics;
+        %tmp.612 = getv %tmp.611 :COLOR_TRANSPARENT;
+        invoke %tmp.607 %tmp.608(%tmp.610, %tmp.612);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 161 8 ]
+        %tmp.614 = lgetv %dc;
+        %tmp.615 = getv function %tmp.614 :drawText;
+        %tmp.617 = lgetv %x.33;
+        %tmp.618 = 5;
+        %tmp.619 = add %tmp.617 %tmp.618;
+        %tmp.621 = lgetv %y.34;
+        %tmp.622 = getm $.Toybox.Graphics;
+        %tmp.623 = getv %tmp.622 :FONT_XTINY;
+        %tmp.625 = lgetv %activeMinutesString.16;
+        %tmp.626 = " / ";
+        %tmp.627 = add %tmp.625 %tmp.626;
+        %tmp.629 = lgetv %activeMinutesGoalString.17;
+        %tmp.630 = add %tmp.627 %tmp.629;
+        %tmp.631 = getm $.Toybox.Graphics;
+        %tmp.632 = getv %tmp.631 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.614 %tmp.615(%tmp.619, %tmp.621, %tmp.623, %tmp.630, %tmp.632);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 164 8 ]
+        %tmp.633 = lgetv %x.33;
+        %tmp.635 = lgetv %width.30;
+        %tmp.636 = 4;
+        %tmp.637 = add %tmp.635 %tmp.636;
+        %tmp.638 = add %tmp.633 %tmp.637;
+        lputv %x.33 %tmp.638;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 165 8 ]
+        %tmp.640 = lgetv %heightScreen.29;
+        %tmp.641 = 2;
+        %tmp.642 = div %tmp.640 %tmp.641;
+        %tmp.644 = lgetv %height.31;
+        %tmp.645 = sub %tmp.642 %tmp.644;
+        %tmp.646 = 2;
+        %tmp.647 = sub %tmp.645 %tmp.646;
+        lputv %y.34 %tmp.647;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 166 8 ]
+        %tmp.649 = lgetv %height.31;
+        lputv %width.30 %tmp.649;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 167 8 ]
+        %tmp.651 = lgetv %height.31;
+        %tmp.652 = 3;
+        %tmp.653 = mul %tmp.651 %tmp.652;
+        %tmp.654 = 4;
+        %tmp.655 = add %tmp.653 %tmp.654;
+        %tmp.656 = 4;
+        %tmp.657 = add %tmp.655 %tmp.656;
+        lputv %height.31 %tmp.657;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 168 8 ]
+        %tmp.659 = lgetv %dc;
+        %tmp.660 = getv function %tmp.659 :setColor;
+        %tmp.661 = self;
+        %tmp.662 = getv function %tmp.661 :getApp;
+        %tmp.663 = invoke %tmp.661 %tmp.662();
+        %tmp.664 = getv function %tmp.663 :getProperty;
+        %tmp.665 = "Jauge4BackgroundColor";
+        %tmp.666 = invoke %tmp.663 %tmp.664(%tmp.665);
+        %tmp.667 = getm $.Toybox.Graphics;
+        %tmp.668 = getv %tmp.667 :COLOR_TRANSPARENT;
+        invoke %tmp.659 %tmp.660(%tmp.666, %tmp.668);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 169 8 ]
+        %tmp.670 = lgetv %dc;
+        %tmp.671 = getv function %tmp.670 :fillRoundedRectangle;
+        %tmp.673 = lgetv %x.33;
+        %tmp.674 = 1;
+        %tmp.675 = sub %tmp.673 %tmp.674;
+        %tmp.677 = lgetv %y.34;
+        %tmp.678 = 1;
+        %tmp.679 = sub %tmp.677 %tmp.678;
+        %tmp.681 = lgetv %width.30;
+        %tmp.682 = 2;
+        %tmp.683 = add %tmp.681 %tmp.682;
+        %tmp.685 = lgetv %height.31;
+        %tmp.686 = 2;
+        %tmp.687 = add %tmp.685 %tmp.686;
+        %tmp.689 = lgetv %radius.32;
+        invoke %tmp.670 %tmp.671(%tmp.675, %tmp.679, %tmp.683, %tmp.687, %tmp.689);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 170 8 ]
+        %tmp.691 = lgetv %dc;
+        %tmp.692 = getv function %tmp.691 :setColor;
+        %tmp.693 = self;
+        %tmp.694 = getv function %tmp.693 :getApp;
+        %tmp.695 = invoke %tmp.693 %tmp.694();
+        %tmp.696 = getv function %tmp.695 :getProperty;
+        %tmp.697 = "Jauge4ForegroundColor";
+        %tmp.698 = invoke %tmp.695 %tmp.696(%tmp.697);
+        %tmp.699 = getm $.Toybox.Graphics;
+        %tmp.700 = getv %tmp.699 :COLOR_TRANSPARENT;
+        invoke %tmp.691 %tmp.692(%tmp.698, %tmp.700);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 171 8 ]
+        %tmp.702 = lgetv %dc;
+        %tmp.703 = getv function %tmp.702 :fillRectangle;
+        %tmp.705 = lgetv %x.33;
+        %tmp.707 = lgetv %y.34;
+        %tmp.709 = lgetv %width.30;
+        %tmp.711 = lgetv %height.31;
+        %tmp.713 = lgetv %floorsClimbedString.18;
+        %tmp.714 = getv function %tmp.713 :toFloat;
+        %tmp.715 = invoke %tmp.713 %tmp.714();
+        %tmp.717 = lgetv %floorsClimbedGoalString.19;
+        %tmp.718 = getv function %tmp.717 :toFloat;
+        %tmp.719 = invoke %tmp.717 %tmp.718();
+        %tmp.720 = div %tmp.715 %tmp.719;
+        %tmp.721 = mul %tmp.711 %tmp.720;
+        invoke %tmp.702 %tmp.703(%tmp.705, %tmp.707, %tmp.709, %tmp.721);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 172 8 ]
+        %tmp.723 = lgetv %dc;
+        %tmp.724 = getv function %tmp.723 :setColor;
+        %tmp.725 = getm $.Toybox.Graphics;
+        %tmp.726 = getv %tmp.725 :COLOR_WHITE;
+        %tmp.727 = getm $.Toybox.Graphics;
+        %tmp.728 = getv %tmp.727 :COLOR_TRANSPARENT;
+        invoke %tmp.723 %tmp.724(%tmp.726, %tmp.728);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 173 8 ]
+        %tmp.730 = lgetv %dc;
+        %tmp.731 = getv function %tmp.730 :drawBitmap;
+        %tmp.733 = lgetv %x.33;
+        %tmp.735 = lgetv %y.34;
+        %tmp.736 = 5;
+        %tmp.737 = add %tmp.735 %tmp.736;
+        %tmp.738 = getm $.Toybox.WatchUi;
+        %tmp.739 = getv function %tmp.738 :loadResource;
+        %tmp.741 = getv ? :Rez;
+        %tmp.742 = getv %tmp.741 :Drawables;
+        %tmp.743 = getv %tmp.742 :stairs;
+        %tmp.744 = invoke %tmp.738 %tmp.739(%tmp.743);
+        invoke %tmp.730 %tmp.731(%tmp.733, %tmp.737, %tmp.744);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 177 8 ]
+        %tmp.745 = lgetv %x.33;
+        %tmp.747 = lgetv %width.30;
+        %tmp.748 = 4;
+        %tmp.749 = add %tmp.747 %tmp.748;
+        %tmp.750 = add %tmp.745 %tmp.749;
+        lputv %x.33 %tmp.750;
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 178 8 ]
+        %tmp.752 = lgetv %dc;
+        %tmp.753 = getv function %tmp.752 :setColor;
+        %tmp.754 = self;
+        %tmp.755 = getv function %tmp.754 :getApp;
+        %tmp.756 = invoke %tmp.754 %tmp.755();
+        %tmp.757 = getv function %tmp.756 :getProperty;
+        %tmp.758 = "Jauge5BackgroundColor";
+        %tmp.759 = invoke %tmp.756 %tmp.757(%tmp.758);
+        %tmp.760 = getm $.Toybox.Graphics;
+        %tmp.761 = getv %tmp.760 :COLOR_TRANSPARENT;
+        invoke %tmp.752 %tmp.753(%tmp.759, %tmp.761);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 179 8 ]
+        %tmp.763 = lgetv %dc;
+        %tmp.764 = getv function %tmp.763 :fillRoundedRectangle;
+        %tmp.766 = lgetv %x.33;
+        %tmp.767 = 1;
+        %tmp.768 = sub %tmp.766 %tmp.767;
+        %tmp.770 = lgetv %y.34;
+        %tmp.771 = 1;
+        %tmp.772 = sub %tmp.770 %tmp.771;
+        %tmp.774 = lgetv %width.30;
+        %tmp.775 = 2;
+        %tmp.776 = add %tmp.774 %tmp.775;
+        %tmp.778 = lgetv %height.31;
+        %tmp.779 = 2;
+        %tmp.780 = add %tmp.778 %tmp.779;
+        %tmp.782 = lgetv %radius.32;
+        invoke %tmp.763 %tmp.764(%tmp.768, %tmp.772, %tmp.776, %tmp.780, %tmp.782);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 180 8 ]
+        %tmp.784 = lgetv %dc;
+        %tmp.785 = getv function %tmp.784 :setColor;
+        %tmp.786 = self;
+        %tmp.787 = getv function %tmp.786 :getApp;
+        %tmp.788 = invoke %tmp.786 %tmp.787();
+        %tmp.789 = getv function %tmp.788 :getProperty;
+        %tmp.790 = "Jauge5ForegroundColor";
+        %tmp.791 = invoke %tmp.788 %tmp.789(%tmp.790);
+        %tmp.792 = getm $.Toybox.Graphics;
+        %tmp.793 = getv %tmp.792 :COLOR_TRANSPARENT;
+        invoke %tmp.784 %tmp.785(%tmp.791, %tmp.793);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 181 8 ]
+        %tmp.795 = lgetv %dc;
+        %tmp.796 = getv function %tmp.795 :fillRectangle;
+        %tmp.798 = lgetv %x.33;
+        %tmp.800 = lgetv %y.34;
+        %tmp.802 = lgetv %width.30;
+        %tmp.804 = lgetv %height.31;
+        %tmp.806 = lgetv %caloriesString.20;
+        %tmp.807 = getv function %tmp.806 :toFloat;
+        %tmp.808 = invoke %tmp.806 %tmp.807();
+        %tmp.810 = lgetv %caloriesGoalString.21;
+        %tmp.811 = getv function %tmp.810 :toFloat;
+        %tmp.812 = invoke %tmp.810 %tmp.811();
+        %tmp.813 = div %tmp.808 %tmp.812;
+        %tmp.814 = mul %tmp.804 %tmp.813;
+        invoke %tmp.795 %tmp.796(%tmp.798, %tmp.800, %tmp.802, %tmp.814);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 182 8 ]
+        %tmp.816 = lgetv %dc;
+        %tmp.817 = getv function %tmp.816 :setColor;
+        %tmp.818 = getm $.Toybox.Graphics;
+        %tmp.819 = getv %tmp.818 :COLOR_WHITE;
+        %tmp.820 = getm $.Toybox.Graphics;
+        %tmp.821 = getv %tmp.820 :COLOR_TRANSPARENT;
+        invoke %tmp.816 %tmp.817(%tmp.819, %tmp.821);
+[ "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc" 183 8 ]
+        %tmp.823 = lgetv %dc;
+        %tmp.824 = getv function %tmp.823 :drawText;
+        %tmp.826 = lgetv %x.33;
+        %tmp.828 = lgetv %y.34;
+        %tmp.829 = 5;
+        %tmp.830 = add %tmp.828 %tmp.829;
+        %tmp.831 = getm $.Toybox.Graphics;
+        %tmp.832 = getv %tmp.831 :FONT_XTINY;
+        %tmp.834 = lgetv %caloriesString.20;
+        %tmp.835 = " / ";
+        %tmp.836 = add %tmp.834 %tmp.835;
+        %tmp.838 = lgetv %caloriesGoalString.21;
+        %tmp.839 = add %tmp.836 %tmp.838;
+        %tmp.840 = getm $.Toybox.Graphics;
+        %tmp.841 = getv %tmp.840 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.823 %tmp.824(%tmp.826, %tmp.830, %tmp.832, %tmp.839, %tmp.841);
+D_Mes_Sites_Internet_watchfaces_MyGarminWF_source_MyGarminWFView_mc_29_40_stop:
     }
-    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 54; ]
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 190; ]
     function onHide() as Void {
     }
-    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 58; ]
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 194; ]
     function onExitSleep() as Void {
     }
-    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 62; ]
+    [ @file = "D:\Mes Sites Internet\watchfaces\MyGarminWF\source\MyGarminWFView.mc"; @line = 198; ]
     function onEnterSleep() as Void {
     }
 }
