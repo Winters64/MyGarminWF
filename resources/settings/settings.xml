@@ -29,4 +29,189 @@
         </settingConfig>
     </setting>
 
+    <!--JAUGE 1-->
+    <setting propertyKey="@Properties.Jauge1DataField" title="@Strings.Jauge1DataFieldTitle">
+        <settingConfig type="list">
+            <listEntry value="1">@Strings.DFBattery</listEntry>
+            <listEntry value="2">@Strings.DFSteps</listEntry>
+            <listEntry value="3">@Strings.DFMinutesActiveWeekly</listEntry>
+            <listEntry value="4">@Strings.DFFloorClimbed</listEntry>
+            <listEntry value="5">@Strings.DFCalories</listEntry>
+        </settingConfig> 
+    </setting>
+    <setting propertyKey="@Properties.Jauge1BackgroundColor" title="@Strings.Jauge1BackgroundColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0x00AAFF">@Strings.ColorBlue</listEntry>
+            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+            <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Jauge1ForegroundColor" title="@Strings.Jauge1ForegroundColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0x00AAFF">@Strings.ColorBlue</listEntry>
+            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+            <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+        </settingConfig>
+    </setting>
+
+    <!--JAUGE 2-->
+    <setting propertyKey="@Properties.Jauge2DataField" title="@Strings.Jauge2DataFieldTitle">
+        <settingConfig type="list">
+            <listEntry value="1">@Strings.DFBattery</listEntry>
+            <listEntry value="2">@Strings.DFSteps</listEntry>
+            <listEntry value="3">@Strings.DFMinutesActiveWeekly</listEntry>
+            <listEntry value="4">@Strings.DFFloorClimbed</listEntry>
+            <listEntry value="5">@Strings.DFCalories</listEntry>
+        </settingConfig> 
+    </setting>
+    <setting propertyKey="@Properties.Jauge2BackgroundColor" title="@Strings.Jauge2BackgroundColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0x00AAFF">@Strings.ColorBlue</listEntry>
+            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+            <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Jauge2ForegroundColor" title="@Strings.Jauge2ForegroundColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0x00AAFF">@Strings.ColorBlue</listEntry>
+            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+            <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+        </settingConfig>
+    </setting>
+
+    <!--JAUGE 3-->
+    <setting propertyKey="@Properties.Jauge3DataField" title="@Strings.Jauge3DataFieldTitle">
+        <settingConfig type="list">
+            <listEntry value="1">@Strings.DFBattery</listEntry>
+            <listEntry value="2">@Strings.DFSteps</listEntry>
+            <listEntry value="3">@Strings.DFMinutesActiveWeekly</listEntry>
+            <listEntry value="4">@Strings.DFFloorClimbed</listEntry>
+            <listEntry value="5">@Strings.DFCalories</listEntry>
+        </settingConfig> 
+    </setting>
+    <setting propertyKey="@Properties.Jauge3BackgroundColor" title="@Strings.Jauge3BackgroundColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0x00AAFF">@Strings.ColorBlue</listEntry>
+            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+            <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Jauge3ForegroundColor" title="@Strings.Jauge3ForegroundColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0x00AAFF">@Strings.ColorBlue</listEntry>
+            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+            <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+        </settingConfig>
+    </setting>
+
+    <!--JAUGE 4-->
+    <setting propertyKey="@Properties.Jauge4DataField" title="@Strings.Jauge4DataFieldTitle">
+        <settingConfig type="list">
+            <listEntry value="1">@Strings.DFBattery</listEntry>
+            <listEntry value="2">@Strings.DFSteps</listEntry>
+            <listEntry value="3">@Strings.DFMinutesActiveWeekly</listEntry>
+            <listEntry value="4">@Strings.DFFloorClimbed</listEntry>
+            <listEntry value="5">@Strings.DFCalories</listEntry>
+        </settingConfig> 
+    </setting>
+    <setting propertyKey="@Properties.Jauge4BackgroundColor" title="@Strings.Jauge4BackgroundColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0x00AAFF">@Strings.ColorBlue</listEntry>
+            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+            <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Jauge4ForegroundColor" title="@Strings.Jauge4ForegroundColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0x00AAFF">@Strings.ColorBlue</listEntry>
+            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+            <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+        </settingConfig>
+    </setting>
+
+    <!--JAUGE 5-->
+    <setting propertyKey="@Properties.Jauge5DataField" title="@Strings.Jauge5DataFieldTitle">
+        <settingConfig type="list">
+            <listEntry value="1">@Strings.DFBattery</listEntry>
+            <listEntry value="2">@Strings.DFSteps</listEntry>
+            <listEntry value="3">@Strings.DFMinutesActiveWeekly</listEntry>
+            <listEntry value="4">@Strings.DFFloorClimbed</listEntry>
+            <listEntry value="5">@Strings.DFCalories</listEntry>
+        </settingConfig> 
+    </setting>
+    <setting propertyKey="@Properties.Jauge5BackgroundColor" title="@Strings.Jauge5BackgroundColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0x00AAFF">@Strings.ColorBlue</listEntry>
+            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+            <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Jauge5ForegroundColor" title="@Strings.Jauge5ForegroundColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0x00AAFF">@Strings.ColorBlue</listEntry>
+            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+            <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+        </settingConfig>
+    </setting>
+
 </settings>

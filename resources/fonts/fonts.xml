@@ -1,0 +1,6 @@
+<fonts>
+	<font id="NovaMono2" filename="NovaMono2.fnt" antialias="true" />
+	<font id="NovaMono" filename="NovaMono.fnt" antialias="true" />
+	<font id="NovaMonoRotate" filename="NovaMonoRotate.fnt" antialias="true" />
+	<font id="Icons" filename="Icons.fnt" antialias="true" />
+</fonts>

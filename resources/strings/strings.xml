@@ -13,9 +13,39 @@
     <string id="ColorWhite">White</string>
     <string id="ColorBlue">Blue</string>
     <string id="ColorRed">Red</string>
+    <string id="ColorGreen">Green</string>
+    <string id="ColorOrange">Orange</string>
+    <string id="ColorYellow">Yellow</string>
 
     <string id="BatteryRemainingModeTitle">The remaining battery life mode</string>
     <string id="BatteryRemainingPercent">The remaining battery life as a percentage</string>
     <string id="BatteryRemainingDays">The remaining battery life in days</string>
+
+
+
+    <string id="Jauge1DataFieldTitle">Jauge 1 - Date Field</string>
+    <string id="Jauge2DataFieldTitle">Jauge 2 - Date Field</string>
+    <string id="Jauge3DataFieldTitle">Jauge 3 - Date Field</string>
+    <string id="Jauge4DataFieldTitle">Jauge 4 - Date Field</string>
+    <string id="Jauge5DataFieldTitle">Jauge 5 - Date Field</string>
+
+    <string id="Jauge1BackgroundColorTitle">Jauge 1 - Background Color</string>
+    <string id="Jauge2BackgroundColorTitle">Jauge 2 - Background Color</string>
+    <string id="Jauge3BackgroundColorTitle">Jauge 3 - Background Color</string>
+    <string id="Jauge4BackgroundColorTitle">Jauge 4 - Background Color</string>
+    <string id="Jauge5BackgroundColorTitle">Jauge 5 - Background Color</string>
+
+    <string id="Jauge1ForegroundColorTitle">Jauge 1 - Foreground Color</string>
+    <string id="Jauge2ForegroundColorTitle">Jauge 2 - Foreground Color</string>
+    <string id="Jauge3ForegroundColorTitle">Jauge 3 - Foreground Color</string>
+    <string id="Jauge4ForegroundColorTitle">Jauge 4 - Foreground Color</string>
+    <string id="Jauge5ForegroundColorTitle">Jauge 5 - Foreground Color</string>
+
+
+    <string id="DFBattery">Battery</string>
+    <string id="DFSteps">Steps</string>
+    <string id="DFMinutesActiveWeekly">Active Minutes (Weekly)</string>
+    <string id="DFFloorClimbed">Floors Climbed</string>
+    <string id="DFCalories">Calories</string>
 
 </strings>
