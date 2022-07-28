@@ -1,9 +1,11 @@
+<!--
+    <string id="BackgroundColorTitle">Background Color</string>
+    <string id="ForegroundColorTitle">Foreground Color</string>
+-->
+
 <strings>
 
     <string id="AppName">MyGarminWF</string>
-
-    <string id="BackgroundColorTitle">Background Color</string>
-    <string id="ForegroundColorTitle">Foreground Color</string>
 
     <string id="MilitaryFormatTitle">Military Format for 24 Hour Time</string>
     
@@ -20,8 +22,6 @@
     <string id="BatteryRemainingModeTitle">The remaining battery life mode</string>
     <string id="BatteryRemainingPercent">The remaining battery life as a percentage</string>
     <string id="BatteryRemainingDays">The remaining battery life in days</string>
-
-
 
     <string id="Jauge1DataFieldTitle">Jauge 1 - Date Field</string>
     <string id="Jauge2DataFieldTitle">Jauge 2 - Date Field</string>
@@ -41,11 +41,14 @@
     <string id="Jauge4ForegroundColorTitle">Jauge 4 - Foreground Color</string>
     <string id="Jauge5ForegroundColorTitle">Jauge 5 - Foreground Color</string>
 
-
     <string id="DFBattery">Battery</string>
     <string id="DFSteps">Steps</string>
     <string id="DFMinutesActiveWeekly">Active Minutes (Weekly)</string>
     <string id="DFFloorClimbed">Floors Climbed</string>
-    <string id="DFCalories">Calories</string>
+    <string id="DFCalories">Calories Burned</string>
+    <!--<string id="DFBodyBattery">Body Battery</string>
+    <string id="DFSolarIntensity">Solar Intensity</string>-->
+
+    <string id="CaloriesGoalTitle">Calories Burned Goal</string>
 
 </strings>

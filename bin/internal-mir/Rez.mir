@@ -21,377 +21,137 @@ module Rez {
         [ @file = "Rez.mc"; @line = 7; ]
         import Toybox.Lang;
         [ @file = "Rez.mc"; @line = 8; @position = 19; initialized = true; ]
-        var NovaMono2 as Symbol;
+        var IconsolasSmall as Symbol;
         [ @file = "Rez.mc"; @line = 9; @position = 19; initialized = true; ]
-        var NovaMono as Symbol;
+        var IconsolasBlack as Symbol;
         [ @file = "Rez.mc"; @line = 10; @position = 19; initialized = true; ]
-        var NovaMonoRotate as Symbol;
+        var IconsolasMedium as Symbol;
         [ @file = "Rez.mc"; @line = 11; @position = 19; initialized = true; ]
+        var IconsolasRotate as Symbol;
+        [ @file = "Rez.mc"; @line = 12; @position = 19; initialized = true; ]
         var Icons as Symbol;
     }
-    [ @file = "Rez.mc"; @line = 13; ]
+    [ @file = "Rez.mc"; @line = 14; ]
     module JsonData {
-        [ @file = "Rez.mc"; @line = 13; ]
+        [ @file = "Rez.mc"; @line = 14; ]
         <init> {
         }
     }
-    [ @file = "Rez.mc"; @line = 15; ]
+    [ @file = "Rez.mc"; @line = 16; ]
     module Layouts {
-        [ @file = "Rez.mc"; @line = 15; ]
+        [ @file = "Rez.mc"; @line = 16; ]
         <init> {
         }
-        [ @file = "Rez.mc"; @line = 16; ]
-        import Toybox.Lang;
         [ @file = "Rez.mc"; @line = 17; ]
-        using Toybox.WatchUi;
+        import Toybox.Lang;
         [ @file = "Rez.mc"; @line = 18; ]
-        using Toybox.WatchUi as :Ui;
+        using Toybox.WatchUi;
         [ @file = "Rez.mc"; @line = 19; ]
-        using Toybox.Graphics;
+        using Toybox.WatchUi as :Ui;
         [ @file = "Rez.mc"; @line = 20; ]
+        using Toybox.Graphics;
+        [ @file = "Rez.mc"; @line = 21; ]
         using Toybox.Graphics as :Gfx;
-        [ @file = "Rez.mc"; @line = 22; ]
+        [ @file = "Rez.mc"; @line = 23; ]
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-Rez_mc_22_69_start:
-[ "Rez.mc" 24 0 ]
-            [ "Rez_mc_22_69_start" "Rez_mc_22_69_stop" ]
-            %rez_cmp_local_custom_drawable_46899115464870199112.1 = local;
+Rez_mc_23_69_start:
+[ "Rez.mc" 25 0 ]
+            [ "Rez_mc_23_69_start" "Rez_mc_23_69_stop" ]
+            %rez_cmp_local_custom_drawable_51962021814498555846.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_46899115464870199112.1 %tmp.1;
-[ "Rez.mc" 25 0 ]
-            [ "Rez_mc_22_69_start" "Rez_mc_22_69_stop" ]
-            %rez_cmp_local_text_TimeLabel.2 = local;
-            %tmp.7 = getm $.Toybox.WatchUi;
-            %tmp.8 = getv function ? %tmp.7 :Text;
-            %tmp.9 = newd 6;
-            %tmp.11 = const :identifier;
-            %tmp.12 = "TimeLabel";
-            %tmp.13 = dup %tmp.9;
-            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
-            %tmp.16 = const :color;
-            %tmp.17 = getm $.Toybox.Graphics;
-            %tmp.18 = getv %tmp.17 :COLOR_WHITE;
-            %tmp.19 = dup %tmp.14;
-            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
-            %tmp.22 = const :locX;
-            %tmp.23 = 260;
-            %tmp.24 = 0.5;
-            %tmp.25 = mul %tmp.23 %tmp.24;
-            %tmp.26 = dup %tmp.20;
-            %tmp.27 = aputv %tmp.26 %tmp.22 %tmp.25;
-            %tmp.29 = const :locY;
-            %tmp.30 = 25;
-            %tmp.31 = dup %tmp.27;
-            %tmp.32 = aputv %tmp.31 %tmp.29 %tmp.30;
-            %tmp.34 = const :justification;
-            %tmp.35 = getm $.Toybox.Graphics;
-            %tmp.36 = getv %tmp.35 :TEXT_JUSTIFY_CENTER;
-            %tmp.37 = dup %tmp.32;
-            %tmp.38 = aputv %tmp.37 %tmp.34 %tmp.36;
-            %tmp.40 = const :font;
-            %tmp.41 = getm $.Toybox.Graphics;
-            %tmp.42 = getv %tmp.41 :FONT_NUMBER_MEDIUM;
-            %tmp.43 = dup %tmp.38;
-            %tmp.44 = aputv %tmp.43 %tmp.40 %tmp.42;
-            %tmp.5 = newc %tmp.8 (%tmp.44);
-            lputv %rez_cmp_local_text_TimeLabel.2 %tmp.5;
-[ "Rez.mc" 26 0 ]
-            [ "Rez_mc_22_69_start" "Rez_mc_22_69_stop" ]
-            %rez_cmp_local_text_DateLabel.3 = local;
-            %tmp.47 = getm $.Toybox.WatchUi;
-            %tmp.48 = getv function ? %tmp.47 :Text;
-            %tmp.49 = newd 6;
-            %tmp.51 = const :identifier;
-            %tmp.52 = "DateLabel";
-            %tmp.53 = dup %tmp.49;
-            %tmp.54 = aputv %tmp.53 %tmp.51 %tmp.52;
-            %tmp.56 = const :color;
-            %tmp.57 = getm $.Toybox.Graphics;
-            %tmp.58 = getv %tmp.57 :COLOR_WHITE;
-            %tmp.59 = dup %tmp.54;
-            %tmp.60 = aputv %tmp.59 %tmp.56 %tmp.58;
-            %tmp.62 = const :locX;
-            %tmp.63 = 260;
-            %tmp.64 = 0.5;
-            %tmp.65 = mul %tmp.63 %tmp.64;
-            %tmp.66 = dup %tmp.60;
-            %tmp.67 = aputv %tmp.66 %tmp.62 %tmp.65;
-            %tmp.69 = const :locY;
-            %tmp.70 = 85;
-            %tmp.71 = dup %tmp.67;
-            %tmp.72 = aputv %tmp.71 %tmp.69 %tmp.70;
-            %tmp.74 = const :justification;
-            %tmp.75 = getm $.Toybox.Graphics;
-            %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_CENTER;
-            %tmp.77 = dup %tmp.72;
-            %tmp.78 = aputv %tmp.77 %tmp.74 %tmp.76;
-            %tmp.80 = const :font;
-            %tmp.81 = getm $.Toybox.Graphics;
-            %tmp.82 = getv %tmp.81 :FONT_XTINY;
-            %tmp.83 = dup %tmp.78;
-            %tmp.84 = aputv %tmp.83 %tmp.80 %tmp.82;
-            %tmp.45 = newc %tmp.48 (%tmp.84);
-            lputv %rez_cmp_local_text_DateLabel.3 %tmp.45;
-[ "Rez.mc" 27 0 ]
-            [ "Rez_mc_22_69_start" "Rez_mc_22_69_stop" ]
-            %rez_cmp_local_text_BatteryLabel.4 = local;
-            %tmp.87 = getm $.Toybox.WatchUi;
-            %tmp.88 = getv function ? %tmp.87 :Text;
-            %tmp.89 = newd 6;
-            %tmp.91 = const :identifier;
-            %tmp.92 = "BatteryLabel";
-            %tmp.93 = dup %tmp.89;
-            %tmp.94 = aputv %tmp.93 %tmp.91 %tmp.92;
-            %tmp.96 = const :color;
-            %tmp.97 = getm $.Toybox.Graphics;
-            %tmp.98 = getv %tmp.97 :COLOR_WHITE;
-            %tmp.99 = dup %tmp.94;
-            %tmp.100 = aputv %tmp.99 %tmp.96 %tmp.98;
-            %tmp.102 = const :locX;
-            %tmp.103 = 260;
-            %tmp.104 = 0.5;
-            %tmp.105 = mul %tmp.103 %tmp.104;
-            %tmp.106 = dup %tmp.100;
-            %tmp.107 = aputv %tmp.106 %tmp.102 %tmp.105;
-            %tmp.109 = const :locY;
-            %tmp.110 = 105;
-            %tmp.111 = dup %tmp.107;
-            %tmp.112 = aputv %tmp.111 %tmp.109 %tmp.110;
-            %tmp.114 = const :justification;
-            %tmp.115 = getm $.Toybox.Graphics;
-            %tmp.116 = getv %tmp.115 :TEXT_JUSTIFY_CENTER;
-            %tmp.117 = dup %tmp.112;
-            %tmp.118 = aputv %tmp.117 %tmp.114 %tmp.116;
-            %tmp.120 = const :font;
-            %tmp.121 = getm $.Toybox.Graphics;
-            %tmp.122 = getv %tmp.121 :FONT_XTINY;
-            %tmp.123 = dup %tmp.118;
-            %tmp.124 = aputv %tmp.123 %tmp.120 %tmp.122;
-            %tmp.85 = newc %tmp.88 (%tmp.124);
-            lputv %rez_cmp_local_text_BatteryLabel.4 %tmp.85;
-[ "Rez.mc" 28 0 ]
-            [ "Rez_mc_22_69_start" "Rez_mc_22_69_stop" ]
-            %rez_cmp_local_text_WeatherLabel.5 = local;
-            %tmp.127 = getm $.Toybox.WatchUi;
-            %tmp.128 = getv function ? %tmp.127 :Text;
-            %tmp.129 = newd 6;
-            %tmp.131 = const :identifier;
-            %tmp.132 = "WeatherLabel";
-            %tmp.133 = dup %tmp.129;
-            %tmp.134 = aputv %tmp.133 %tmp.131 %tmp.132;
-            %tmp.136 = const :color;
-            %tmp.137 = getm $.Toybox.Graphics;
-            %tmp.138 = getv %tmp.137 :COLOR_WHITE;
-            %tmp.139 = dup %tmp.134;
-            %tmp.140 = aputv %tmp.139 %tmp.136 %tmp.138;
-            %tmp.142 = const :locX;
-            %tmp.143 = 260;
-            %tmp.144 = 0.5;
-            %tmp.145 = mul %tmp.143 %tmp.144;
-            %tmp.146 = dup %tmp.140;
-            %tmp.147 = aputv %tmp.146 %tmp.142 %tmp.145;
-            %tmp.149 = const :locY;
-            %tmp.150 = 125;
-            %tmp.151 = dup %tmp.147;
-            %tmp.152 = aputv %tmp.151 %tmp.149 %tmp.150;
-            %tmp.154 = const :justification;
-            %tmp.155 = getm $.Toybox.Graphics;
-            %tmp.156 = getv %tmp.155 :TEXT_JUSTIFY_CENTER;
-            %tmp.157 = dup %tmp.152;
-            %tmp.158 = aputv %tmp.157 %tmp.154 %tmp.156;
-            %tmp.160 = const :font;
-            %tmp.161 = getm $.Toybox.Graphics;
-            %tmp.162 = getv %tmp.161 :FONT_XTINY;
-            %tmp.163 = dup %tmp.158;
-            %tmp.164 = aputv %tmp.163 %tmp.160 %tmp.162;
-            %tmp.125 = newc %tmp.128 (%tmp.164);
-            lputv %rez_cmp_local_text_WeatherLabel.5 %tmp.125;
-[ "Rez.mc" 29 0 ]
-            [ "Rez_mc_22_69_start" "Rez_mc_22_69_stop" ]
-            %rez_cmp_local_text_StepsLabel.6 = local;
-            %tmp.167 = getm $.Toybox.WatchUi;
-            %tmp.168 = getv function ? %tmp.167 :Text;
-            %tmp.169 = newd 6;
-            %tmp.171 = const :identifier;
-            %tmp.172 = "StepsLabel";
-            %tmp.173 = dup %tmp.169;
-            %tmp.174 = aputv %tmp.173 %tmp.171 %tmp.172;
-            %tmp.176 = const :color;
-            %tmp.177 = getm $.Toybox.Graphics;
-            %tmp.178 = getv %tmp.177 :COLOR_WHITE;
-            %tmp.179 = dup %tmp.174;
-            %tmp.180 = aputv %tmp.179 %tmp.176 %tmp.178;
-            %tmp.182 = const :locX;
-            %tmp.183 = 260;
-            %tmp.184 = 0.5;
-            %tmp.185 = mul %tmp.183 %tmp.184;
-            %tmp.186 = dup %tmp.180;
-            %tmp.187 = aputv %tmp.186 %tmp.182 %tmp.185;
-            %tmp.189 = const :locY;
-            %tmp.190 = 145;
-            %tmp.191 = dup %tmp.187;
-            %tmp.192 = aputv %tmp.191 %tmp.189 %tmp.190;
-            %tmp.194 = const :justification;
-            %tmp.195 = getm $.Toybox.Graphics;
-            %tmp.196 = getv %tmp.195 :TEXT_JUSTIFY_CENTER;
-            %tmp.197 = dup %tmp.192;
-            %tmp.198 = aputv %tmp.197 %tmp.194 %tmp.196;
-            %tmp.200 = const :font;
-            %tmp.201 = getm $.Toybox.Graphics;
-            %tmp.202 = getv %tmp.201 :FONT_XTINY;
-            %tmp.203 = dup %tmp.198;
-            %tmp.204 = aputv %tmp.203 %tmp.200 %tmp.202;
-            %tmp.165 = newc %tmp.168 (%tmp.204);
-            lputv %rez_cmp_local_text_StepsLabel.6 %tmp.165;
-[ "Rez.mc" 30 0 ]
-            [ "Rez_mc_22_69_start" "Rez_mc_22_69_stop" ]
-            %rez_cmp_local_text_ActiveMinutesLabel.7 = local;
-            %tmp.207 = getm $.Toybox.WatchUi;
-            %tmp.208 = getv function ? %tmp.207 :Text;
-            %tmp.209 = newd 6;
-            %tmp.211 = const :identifier;
-            %tmp.212 = "ActiveMinutesLabel";
-            %tmp.213 = dup %tmp.209;
-            %tmp.214 = aputv %tmp.213 %tmp.211 %tmp.212;
-            %tmp.216 = const :color;
-            %tmp.217 = getm $.Toybox.Graphics;
-            %tmp.218 = getv %tmp.217 :COLOR_WHITE;
-            %tmp.219 = dup %tmp.214;
-            %tmp.220 = aputv %tmp.219 %tmp.216 %tmp.218;
-            %tmp.222 = const :locX;
-            %tmp.223 = 260;
-            %tmp.224 = 0.5;
-            %tmp.225 = mul %tmp.223 %tmp.224;
-            %tmp.226 = dup %tmp.220;
-            %tmp.227 = aputv %tmp.226 %tmp.222 %tmp.225;
-            %tmp.229 = const :locY;
-            %tmp.230 = 165;
-            %tmp.231 = dup %tmp.227;
-            %tmp.232 = aputv %tmp.231 %tmp.229 %tmp.230;
-            %tmp.234 = const :justification;
-            %tmp.235 = getm $.Toybox.Graphics;
-            %tmp.236 = getv %tmp.235 :TEXT_JUSTIFY_CENTER;
-            %tmp.237 = dup %tmp.232;
-            %tmp.238 = aputv %tmp.237 %tmp.234 %tmp.236;
-            %tmp.240 = const :font;
-            %tmp.241 = getm $.Toybox.Graphics;
-            %tmp.242 = getv %tmp.241 :FONT_XTINY;
-            %tmp.243 = dup %tmp.238;
-            %tmp.244 = aputv %tmp.243 %tmp.240 %tmp.242;
-            %tmp.205 = newc %tmp.208 (%tmp.244);
-            lputv %rez_cmp_local_text_ActiveMinutesLabel.7 %tmp.205;
-[ "Rez.mc" 32 8 ]
-            %tmp.245 = newa Array<WatchUi.Drawable> 7;
-            %tmp.247 = lgetv %rez_cmp_local_custom_drawable_46899115464870199112.1;
-            %tmp.248 = dup %tmp.245;
-            %tmp.249 = aputv %tmp.248 0 %tmp.247;
-            %tmp.251 = lgetv %rez_cmp_local_text_TimeLabel.2;
-            %tmp.252 = dup %tmp.249;
-            %tmp.253 = aputv %tmp.252 1 %tmp.251;
-            %tmp.255 = lgetv %rez_cmp_local_text_DateLabel.3;
-            %tmp.256 = dup %tmp.253;
-            %tmp.257 = aputv %tmp.256 2 %tmp.255;
-            %tmp.259 = lgetv %rez_cmp_local_text_BatteryLabel.4;
-            %tmp.260 = dup %tmp.257;
-            %tmp.261 = aputv %tmp.260 3 %tmp.259;
-            %tmp.263 = lgetv %rez_cmp_local_text_WeatherLabel.5;
-            %tmp.264 = dup %tmp.261;
-            %tmp.265 = aputv %tmp.264 4 %tmp.263;
-            %tmp.267 = lgetv %rez_cmp_local_text_StepsLabel.6;
-            %tmp.268 = dup %tmp.265;
-            %tmp.269 = aputv %tmp.268 5 %tmp.267;
-            %tmp.271 = lgetv %rez_cmp_local_text_ActiveMinutesLabel.7;
-            %tmp.272 = dup %tmp.269;
-            %tmp.273 = aputv %tmp.272 6 %tmp.271;
-            ret %tmp.273;
-Rez_mc_22_69_stop:
+            lputv %rez_cmp_local_custom_drawable_51962021814498555846.1 %tmp.1;
+[ "Rez.mc" 27 8 ]
+            %tmp.5 = newa Array<WatchUi.Drawable> 1;
+            %tmp.7 = lgetv %rez_cmp_local_custom_drawable_51962021814498555846.1;
+            %tmp.8 = dup %tmp.5;
+            %tmp.9 = aputv %tmp.8 0 %tmp.7;
+            ret %tmp.9;
+Rez_mc_23_69_stop:
         }
     }
-    [ @file = "Rez.mc"; @line = 37; ]
+    [ @file = "Rez.mc"; @line = 32; ]
     module Menus {
-        [ @file = "Rez.mc"; @line = 37; ]
+        [ @file = "Rez.mc"; @line = 32; ]
         <init> {
         }
     }
-    [ @file = "Rez.mc"; @line = 39; ]
+    [ @file = "Rez.mc"; @line = 34; ]
     module Strings {
-        [ @file = "Rez.mc"; @line = 39; ]
+        [ @file = "Rez.mc"; @line = 34; ]
         <init> {
         }
-        [ @file = "Rez.mc"; @line = 40; ]
+        [ @file = "Rez.mc"; @line = 35; ]
         import Toybox.Lang;
-        [ @file = "Rez.mc"; @line = 41; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 36; @position = 19; initialized = true; ]
         var Jauge3ForegroundColorTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 42; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 37; @position = 19; initialized = true; ]
         var ColorBlue as Symbol;
-        [ @file = "Rez.mc"; @line = 43; @position = 19; initialized = true; ]
-        var BackgroundColorTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 44; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 38; @position = 19; initialized = true; ]
         var Jauge4DataFieldTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 45; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 39; @position = 19; initialized = true; ]
         var Jauge4BackgroundColorTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 46; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 40; @position = 19; initialized = true; ]
         var ColorYellow as Symbol;
-        [ @file = "Rez.mc"; @line = 47; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 41; @position = 19; initialized = true; ]
         var Jauge1DataFieldTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 48; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 42; @position = 19; initialized = true; ]
         var Jauge1BackgroundColorTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 49; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 43; @position = 19; initialized = true; ]
         var AppName as Symbol;
-        [ @file = "Rez.mc"; @line = 50; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 44; @position = 19; initialized = true; ]
         var BatteryRemainingPercent as Symbol;
-        [ @file = "Rez.mc"; @line = 51; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 45; @position = 19; initialized = true; ]
         var Jauge1ForegroundColorTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 52; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 46; @position = 19; initialized = true; ]
         var Jauge5ForegroundColorTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 53; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 47; @position = 19; initialized = true; ]
         var ColorRed as Symbol;
-        [ @file = "Rez.mc"; @line = 54; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 48; @position = 19; initialized = true; ]
         var DFBattery as Symbol;
-        [ @file = "Rez.mc"; @line = 55; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 49; @position = 19; initialized = true; ]
         var Jauge3DataFieldTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 56; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 50; @position = 19; initialized = true; ]
         var DFFloorClimbed as Symbol;
-        [ @file = "Rez.mc"; @line = 57; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 51; @position = 19; initialized = true; ]
         var ColorWhite as Symbol;
-        [ @file = "Rez.mc"; @line = 58; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 52; @position = 19; initialized = true; ]
         var Jauge3BackgroundColorTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 59; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 53; @position = 19; initialized = true; ]
         var ColorGreen as Symbol;
-        [ @file = "Rez.mc"; @line = 60; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 54; @position = 19; initialized = true; ]
         var Jauge5DataFieldTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 61; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 55; @position = 19; initialized = true; ]
         var ColorLightGray as Symbol;
-        [ @file = "Rez.mc"; @line = 62; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 56; @position = 19; initialized = true; ]
         var ColorDarkGray as Symbol;
-        [ @file = "Rez.mc"; @line = 63; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 57; @position = 19; initialized = true; ]
         var Jauge5BackgroundColorTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 64; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 58; @position = 19; initialized = true; ]
         var DFMinutesActiveWeekly as Symbol;
-        [ @file = "Rez.mc"; @line = 65; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 59; @position = 19; initialized = true; ]
         var MilitaryFormatTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 66; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 60; @position = 19; initialized = true; ]
+        var CaloriesGoalTitle as Symbol;
+        [ @file = "Rez.mc"; @line = 61; @position = 19; initialized = true; ]
         var DFSteps as Symbol;
-        [ @file = "Rez.mc"; @line = 67; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 62; @position = 19; initialized = true; ]
         var ColorBlack as Symbol;
-        [ @file = "Rez.mc"; @line = 68; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 63; @position = 19; initialized = true; ]
         var DFCalories as Symbol;
-        [ @file = "Rez.mc"; @line = 69; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 64; @position = 19; initialized = true; ]
         var ColorOrange as Symbol;
-        [ @file = "Rez.mc"; @line = 70; @position = 19; initialized = true; ]
-        var ForegroundColorTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 71; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 65; @position = 19; initialized = true; ]
         var Jauge2DataFieldTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 72; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 66; @position = 19; initialized = true; ]
         var Jauge2BackgroundColorTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 73; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 67; @position = 19; initialized = true; ]
         var BatteryRemainingDays as Symbol;
-        [ @file = "Rez.mc"; @line = 74; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 68; @position = 19; initialized = true; ]
         var Jauge2ForegroundColorTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 75; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 69; @position = 19; initialized = true; ]
         var Jauge4ForegroundColorTitle as Symbol;
-        [ @file = "Rez.mc"; @line = 76; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 70; @position = 19; initialized = true; ]
         var BatteryRemainingModeTitle as Symbol;
     }
 }

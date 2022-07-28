@@ -1,9 +1,12 @@
-<properties>
-
+<!--
+    TO-DO
     <property id="BackgroundColor" type="number">0x000000</property>
     <property id="ForegroundColor" type="number">0xFFFFFF</property>
+-->
+
+<properties>
+
     <property id="UseMilitaryFormat" type="boolean">false</property>
-    <property id="BatteryRemainingMode" type="number">1</property>
 
     <property id="Jauge1DataField" type="number">1</property>
     <property id="Jauge1BackgroundColor" type="number">0xAAAAAA</property>
@@ -24,5 +27,7 @@
     <property id="Jauge5DataField" type="number">5</property>
     <property id="Jauge5BackgroundColor" type="number">0xAAAAAA</property>
     <property id="Jauge5ForegroundColor" type="number">0x00AAFF</property>
+
+    <property id="CaloriesGoal" type="number">2500</property>
     
 </properties>

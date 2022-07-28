@@ -29,13 +29,14 @@ class MyGarminWFView extends WatchUi.WatchFace {
     function onUpdate(dc as Dc) as Void {
 
         //Fonts
-        var NovaMono2 = WatchUi.loadResource(Rez.Fonts.NovaMono2);
-        var NovaMono = WatchUi.loadResource(Rez.Fonts.NovaMono);
-        var NovaMonoRotate = WatchUi.loadResource(Rez.Fonts.NovaMonoRotate);
+        var IconsolasSmall = WatchUi.loadResource(Rez.Fonts.IconsolasSmall);
+        var IconsolasBlack = WatchUi.loadResource(Rez.Fonts.IconsolasBlack);
+        var IconsolasMedium = WatchUi.loadResource(Rez.Fonts.IconsolasMedium);
+        var IconsolasRotate = WatchUi.loadResource(Rez.Fonts.IconsolasRotate);
         var Icons = WatchUi.loadResource(Rez.Fonts.Icons);
 
         // Set the background color then call to clear the screen
-        dc.setColor(Graphics.COLOR_TRANSPARENT, getApp().getProperty("BackgroundColor") as Number);
+        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_BLACK as Number);
         dc.clear();
 
         // Get the current time and format it correctly
@@ -56,76 +57,14 @@ class MyGarminWFView extends WatchUi.WatchFace {
 
         // Get the current time and format it correctly
         var today = Gregorian.info(Time.now(), Time.FORMAT_LONG);
-        var dateString = Lang.format("$1$ $2$", [today.day_of_week, today.day]);
-
-         // Get and show the battery in day
-        var battery = System.getSystemStats();
-        var batteryVal = null;
-        switch (getApp().getProperty("BatteryRemainingMode")){
-            case 1 : 
-                batteryVal = battery.battery.format("%d")+"%";
-                break;
-            case 2 :
-                batteryVal = battery.batteryInDays.format("%d")+"D";
-                break;
-            default:
-                batteryVal = "ERROR";
-                break;
-        }
-        var batteryString = batteryVal;        
+        var dateString = Lang.format("$1$ $2$", [today.day_of_week, today.day]);                
         
         // Get and show the weather in day
         var weather = Weather.getCurrentConditions();
         var temperatureString = weather.temperature.format("%d")+"°";
         var precipitationString = weather.precipitationChance.format("%d")+"%";
 
-        // Get and show monitoring infos
-        var monitoring = ActivityMonitor.getInfo();
-        var stepsString = monitoring.steps;
-        var stepsGoalString = monitoring.stepGoal;
-        var activeMinutesString = monitoring.activeMinutesWeek.total;
-        var activeMinutesGoalString = monitoring.activeMinutesWeekGoal;
-        var floorsClimbedString = monitoring.floorsClimbed;
-        var floorsClimbedGoalString = monitoring.floorsClimbedGoal;
-        var caloriesString = monitoring.calories;
-        var caloriesGoalString = 3000;
-
-        // FOR TESTING /!\
-        stepsString = 2500;
-        activeMinutesString = 100;
-        floorsClimbedString = 7;
-        caloriesString = 1000;
-
-        //-----------------------
-        // Update the view
-        //-----------------------
-        var viewTime = View.findDrawableById("TimeLabel") as Text;
-        viewTime.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewTime.setText(timeString);
-        
-        var viewDate = View.findDrawableById("DateLabel") as Text;
-        viewDate.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewDate.setText(dateString);
-
-        var viewBattery = View.findDrawableById("BatteryLabel") as Text;
-        viewBattery.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewBattery.setText(batteryString);
-
-        var viewWeather = View.findDrawableById("WeatherLabel") as Text;
-        viewWeather.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewWeather.setText(temperatureString + " - " + precipitationString);
-
-        var viewSteps = View.findDrawableById("StepsLabel") as Text;
-        viewSteps.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewSteps.setText(stepsString + " / " + stepsGoalString);
-
-        var viewActiveMinutes = View.findDrawableById("ActiveMinutesLabel") as Text;
-        viewActiveMinutes.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewActiveMinutes.setText(activeMinutesString + " / " + activeMinutesGoalString);
-
-        // Call the parent onUpdate function to redraw the layout
-        //View.onUpdate(dc);
-
+        // Calcul Initial position
         var widthScreen = dc.getWidth();
         var heightScreen = dc.getHeight();
         var height = 20;
@@ -136,80 +75,51 @@ class MyGarminWFView extends WatchUi.WatchFace {
 
         // Hours
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(widthScreen/2,30,NovaMono,timeString,Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(widthScreen/2,30,IconsolasBlack,timeString,Graphics.TEXT_JUSTIFY_CENTER);
 
-        // Data field 1
-        dc.setColor(getApp().getProperty("Jauge1BackgroundColor"), Graphics.COLOR_TRANSPARENT);
-        dc.fillRoundedRectangle(x-1,y-1,width+2, height+2,radius);
-        dc.setColor(getApp().getProperty("Jauge1ForegroundColor"), Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(x,y,width*(battery.battery/100),height);
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(x+4,y,Icons,"0",Graphics.TEXT_JUSTIFY_LEFT);
-        dc.drawText(x+4+16+2,y,NovaMono2,battery.battery.format("%d"),Graphics.TEXT_JUSTIFY_LEFT);
-        
-        // Data field 2
-        y += height+4;
-        dc.setColor(getApp().getProperty("Jauge2BackgroundColor"), Graphics.COLOR_TRANSPARENT);
-        dc.fillRoundedRectangle(x-1,y-1,width+2, height+2,radius);
-        dc.setColor(getApp().getProperty("Jauge2ForegroundColor"), Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(x,y,width*(stepsString.toFloat() / stepsGoalString.toFloat()),height);
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(x+4,y,Icons,"4",Graphics.TEXT_JUSTIFY_LEFT);
-        dc.drawText(x+4+16+2,y,NovaMono2,stepsString.toString(),Graphics.TEXT_JUSTIFY_LEFT);
+        // Horizontal datafields (x3)
+        for(var i=1; i<=3; i++){
+            var valueCurrentMax = getDataFieldDatas(getApp().getProperty("Jauge"+i+"DataField")) as Array<Float>;
+            var result = valueCurrentMax[1].toFloat() <= valueCurrentMax[2].toFloat() ? valueCurrentMax[1].toFloat()/valueCurrentMax[2].toFloat() : 1.00;           
+            dc.setColor(getApp().getProperty("Jauge"+i+"BackgroundColor"), Graphics.COLOR_TRANSPARENT);
+            dc.fillRoundedRectangle(x-1,y-1,width+2, height+2,radius);
+            dc.setColor(getApp().getProperty("Jauge"+i+"ForegroundColor"), Graphics.COLOR_TRANSPARENT);
+            dc.fillRectangle(x,y,width*result,height);
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(x+4,y,Icons,getApp().getProperty("Jauge"+i+"DataField"),Graphics.TEXT_JUSTIFY_LEFT);
+            dc.drawText(x+4+16+2,y,IconsolasSmall,valueCurrentMax[1].toString(),Graphics.TEXT_JUSTIFY_LEFT);
+            y += height+4;
+        }
 
-        // Data field 3
-        y += height+4;
-        dc.setColor(getApp().getProperty("Jauge3BackgroundColor"), Graphics.COLOR_TRANSPARENT);
-        dc.fillRoundedRectangle(x-1,y-1,width+2, height+2,radius);
-        dc.setColor(getApp().getProperty("Jauge3ForegroundColor"), Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(x,y,width*(activeMinutesString.toFloat() / activeMinutesGoalString.toFloat()),height);
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(x+4,y,Icons,"1",Graphics.TEXT_JUSTIFY_LEFT);
-        dc.drawText(x+4+16+2,y,NovaMono2,activeMinutesString.toString(),Graphics.TEXT_JUSTIFY_LEFT);
-
-        // Data fiels 4
+        // Vertical datafields (x2)
         x += width+4;
         y = (heightScreen/2) - height - 2;
         width = height;
         height = (height*3)+4+4;
-        dc.setColor(getApp().getProperty("Jauge4BackgroundColor"), Graphics.COLOR_TRANSPARENT);
-        dc.fillRoundedRectangle(x-1,y-1,width+2,height+2,radius);
-        dc.setColor(getApp().getProperty("Jauge4ForegroundColor"), Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(x,y,width,height);
-        dc.setColor(getApp().getProperty("Jauge4BackgroundColor"), Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(x,y,width,height*(1-(floorsClimbedString.toFloat() / floorsClimbedGoalString.toFloat())));
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        var y2 = y + height - 4 -4;
-        dc.drawText(x+2,y2-16,Icons,"2",Graphics.TEXT_JUSTIFY_LEFT);
-        y2 = y2 - 16-8;
-        for( var i = 0; i < (floorsClimbedString.toString()).length(); i++ ) {
-            y2 -= 7;
-            var char = (floorsClimbedString.toString()).substring(i,i+1);
-            dc.drawText(x+5, y2, NovaMonoRotate, char, Graphics.TEXT_JUSTIFY_LEFT);
-            
-        }
-
-        // Data field 5
-        x += width+4;
-        dc.setColor(getApp().getProperty("Jauge5BackgroundColor"), Graphics.COLOR_TRANSPARENT);
-        dc.fillRoundedRectangle(x-1,y-1,width+2,height+2,radius);
-        dc.setColor(getApp().getProperty("Jauge5ForegroundColor"), Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(x,y,width,height);
-        dc.setColor(getApp().getProperty("Jauge5BackgroundColor"), Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(x,y,width,height*(1-(caloriesString.toFloat() / caloriesGoalString.toFloat())));
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        var y3 = y + height - 4 - 4;
-        dc.drawText(x+2,y3-16,Icons,"3",Graphics.TEXT_JUSTIFY_LEFT);
-        y3 = y3 - 16-8;
-        for( var i = 0; i < (caloriesString.toString()).length(); i++ ) {
-            y3 -= 7;
-            var char = (caloriesString.toString()).substring(i,i+1);
-            dc.drawText(x+5, y3, NovaMonoRotate, char, Graphics.TEXT_JUSTIFY_LEFT);
+        for(var i=4; i<=5; i++){
+            var valueCurrentMax = getDataFieldDatas(getApp().getProperty("Jauge"+i+"DataField")) as Array<Float>;
+            var result = valueCurrentMax[1].toFloat() <= valueCurrentMax[2].toFloat() ? valueCurrentMax[1].toFloat()/valueCurrentMax[2].toFloat() : 1.00;  
+            dc.setColor(getApp().getProperty("Jauge"+i+"BackgroundColor"), Graphics.COLOR_TRANSPARENT);
+            dc.fillRoundedRectangle(x-1,y-1,width+2,height+2,radius);
+            dc.setColor(getApp().getProperty("Jauge"+i+"ForegroundColor"), Graphics.COLOR_TRANSPARENT);
+            dc.fillRectangle(x,y,width,height);
+            dc.setColor(getApp().getProperty("Jauge"+i+"BackgroundColor"), Graphics.COLOR_TRANSPARENT);
+            dc.fillRectangle(x,y,width,height*(1-result));
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            var y2 = y + height - 4 -4;
+            dc.drawText(x+2,y2-16,Icons,getApp().getProperty("Jauge"+i+"DataField"),Graphics.TEXT_JUSTIFY_LEFT);
+            y2 = y2 - 16-8;
+            for( var j = 0; j < (valueCurrentMax[1].toString()).length(); j++ ) {
+                y2 -= 7;
+                var char = (valueCurrentMax[1].toString()).substring(j,j+1);
+                dc.drawText(x+5, y2, IconsolasRotate, char, Graphics.TEXT_JUSTIFY_LEFT);
+            }
+            x += width+4;
         }
 
         // Date
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(widthScreen/2,heightScreen-30-30,Graphics.FONT_SMALL,dateString,Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(widthScreen/2,y+height+10,IconsolasMedium,dateString,Graphics.TEXT_JUSTIFY_CENTER);
 
     }
 
@@ -225,6 +135,53 @@ class MyGarminWFView extends WatchUi.WatchFace {
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() as Void {
+    }
+
+    // Get data field datas
+    function getDataFieldDatas(dataField) {
+        var datas = {};
+        var monitoring = ActivityMonitor.getInfo();
+        switch (dataField) {
+            case 1 : //Battery
+                var battery = System.getSystemStats();
+                var batteryString = battery.battery.format("%d").toNumber();
+                datas[1] = batteryString;
+                datas[2] = 100;
+                break;
+            case 2 : //Steps
+                var stepsString = monitoring.steps;
+                var stepsGoalString = monitoring.stepGoal;
+                stepsString = 2500; //for test
+                datas[1] = stepsString;
+                datas[2] = stepsGoalString;
+                break;
+            case 3 : //Active Minutes (Weekly)
+                var activeMinutesString = monitoring.activeMinutesWeek.total;
+                var activeMinutesGoalString = monitoring.activeMinutesWeekGoal;
+                activeMinutesString = 100;
+                datas[1] = activeMinutesString;
+                datas[2] = activeMinutesGoalString;
+                break;
+            case 4 : //Floors Climbed
+                var floorsClimbedString = monitoring.floorsClimbed;
+                var floorsClimbedGoalString = monitoring.floorsClimbedGoal;
+                floorsClimbedString = 7;
+                datas[1] = floorsClimbedString;
+                datas[2] = floorsClimbedGoalString;
+                break;
+            case 5 : //Calories                
+                var caloriesString = monitoring.calories;
+                var caloriesGoalString = getApp().getProperty("CaloriesGoal");
+                caloriesString = 1000;
+                datas[1] = caloriesString;
+                datas[2] = caloriesGoalString;
+                break;
+            default :
+                datas[1] = 0;
+                datas[2] = 0;
+                break;
+        }
+        return datas;
     }
 
 }

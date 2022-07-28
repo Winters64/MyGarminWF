@@ -1,6 +1,9 @@
 <fonts>
-	<font id="NovaMono2" filename="NovaMono2.fnt" antialias="true" />
-	<font id="NovaMono" filename="NovaMono.fnt" antialias="true" />
-	<font id="NovaMonoRotate" filename="NovaMonoRotate.fnt" antialias="true" />
+
+	<font id="IconsolasSmall" filename="iconsolas_small.fnt" antialias="true" />
+	<font id="IconsolasBlack" filename="iconsolas_black.fnt" antialias="true" />
+	<font id="IconsolasMedium" filename="iconsolas_medium.fnt" antialias="true" />
+	<font id="IconsolasRotate" filename="iconsolas_rotate.fnt" antialias="true" />
 	<font id="Icons" filename="Icons.fnt" antialias="true" />
+
 </fonts>
