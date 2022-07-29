@@ -1,12 +1,12 @@
-import Toybox.Application;
-import Toybox.Graphics;
-import Toybox.Lang;
-import Toybox.System;
-import Toybox.WatchUi;
-import Toybox.Time.Gregorian;
-import Toybox.System;
-import Toybox.Weather;
-import Toybox.ActivityMonitor;
+using Toybox.Application;
+using Toybox.Graphics;
+using Toybox.Lang;
+using Toybox.System;
+using Toybox.WatchUi;
+using Toybox.Time.Gregorian;
+using Toybox.System;
+using Toybox.Weather;
+using Toybox.ActivityMonitor;
 
 class MyGarminWFView extends WatchUi.WatchFace {
 
@@ -67,59 +67,60 @@ class MyGarminWFView extends WatchUi.WatchFace {
         // Calcul Initial position
         var widthScreen = dc.getWidth();
         var heightScreen = dc.getHeight();
-        var height = 20;
-        var width = widthScreen-(20+4)*2-30*2;
+        var height = 28;
+        var margin = 4;
+        var width = widthScreen-(height+margin)*2-20*2;
         var radius = 2;
-        var x = 30;
-        var y = (heightScreen/2) - height - 2;        
+        var x = 20;
+        var y = (heightScreen/2) - height - margin;        
 
         // Hours
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(widthScreen/2,30,IconsolasBlack,timeString,Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(widthScreen/2,20,IconsolasBlack,timeString,Graphics.TEXT_JUSTIFY_CENTER);
 
         // Horizontal datafields (x3)
         for(var i=1; i<=3; i++){
             var valueCurrentMax = getDataFieldDatas(getApp().getProperty("Jauge"+i+"DataField")) as Array<Float>;
             var result = valueCurrentMax[1].toFloat() <= valueCurrentMax[2].toFloat() ? valueCurrentMax[1].toFloat()/valueCurrentMax[2].toFloat() : 1.00;           
             dc.setColor(getApp().getProperty("Jauge"+i+"BackgroundColor"), Graphics.COLOR_TRANSPARENT);
-            dc.fillRoundedRectangle(x-1,y-1,width+2, height+2,radius);
+            dc.fillRoundedRectangle(x,y,width, height,radius);
             dc.setColor(getApp().getProperty("Jauge"+i+"ForegroundColor"), Graphics.COLOR_TRANSPARENT);
-            dc.fillRectangle(x,y,width*result,height);
+            dc.fillRoundedRectangle(x,y,width*result,height,radius);
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(x+4,y,Icons,getApp().getProperty("Jauge"+i+"DataField"),Graphics.TEXT_JUSTIFY_LEFT);
-            dc.drawText(x+4+16+2,y,IconsolasSmall,valueCurrentMax[1].toString(),Graphics.TEXT_JUSTIFY_LEFT);
+            dc.drawText(x+4,y+4,Icons,getApp().getProperty("Jauge"+i+"DataField"),Graphics.TEXT_JUSTIFY_LEFT);
+            dc.drawText(x+4+20+4,y+1,IconsolasSmall,valueCurrentMax[1].toString(),Graphics.TEXT_JUSTIFY_LEFT);
             y += height+4;
         }
 
         // Vertical datafields (x2)
-        x += width+4;
-        y = (heightScreen/2) - height - 2;
+        x += width + margin;
+        y = (heightScreen/2) - height - margin;
         width = height;
-        height = (height*3)+4+4;
+        height = (height*3)+(margin*2);
         for(var i=4; i<=5; i++){
             var valueCurrentMax = getDataFieldDatas(getApp().getProperty("Jauge"+i+"DataField")) as Array<Float>;
             var result = valueCurrentMax[1].toFloat() <= valueCurrentMax[2].toFloat() ? valueCurrentMax[1].toFloat()/valueCurrentMax[2].toFloat() : 1.00;  
             dc.setColor(getApp().getProperty("Jauge"+i+"BackgroundColor"), Graphics.COLOR_TRANSPARENT);
-            dc.fillRoundedRectangle(x-1,y-1,width+2,height+2,radius);
+            dc.fillRoundedRectangle(x,y,width,height,radius);
             dc.setColor(getApp().getProperty("Jauge"+i+"ForegroundColor"), Graphics.COLOR_TRANSPARENT);
-            dc.fillRectangle(x,y,width,height);
+            dc.fillRoundedRectangle(x,y,width,height,radius);
             dc.setColor(getApp().getProperty("Jauge"+i+"BackgroundColor"), Graphics.COLOR_TRANSPARENT);
-            dc.fillRectangle(x,y,width,height*(1-result));
+            dc.fillRoundedRectangle(x,y,width,height*(1-result),radius);
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            var y2 = y + height - 4 -4;
-            dc.drawText(x+2,y2-16,Icons,getApp().getProperty("Jauge"+i+"DataField"),Graphics.TEXT_JUSTIFY_LEFT);
-            y2 = y2 - 16-8;
+            var y2 = y + height - margin - margin;
+            dc.drawText(x+4,y2-17,Icons,getApp().getProperty("Jauge"+i+"DataField"),Graphics.TEXT_JUSTIFY_LEFT);
+            y2 = y2 - 20 - 4;
             for( var j = 0; j < (valueCurrentMax[1].toString()).length(); j++ ) {
-                y2 -= 7;
+                y2 -= 9;
                 var char = (valueCurrentMax[1].toString()).substring(j,j+1);
-                dc.drawText(x+5, y2, IconsolasRotate, char, Graphics.TEXT_JUSTIFY_LEFT);
+                dc.drawText(x+8, y2, IconsolasRotate, char, Graphics.TEXT_JUSTIFY_LEFT);
             }
             x += width+4;
         }
 
-        // Date
+        // Date + weather
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(widthScreen/2,y+height+10,IconsolasMedium,dateString,Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(widthScreen/2,y+height+10,IconsolasMedium,dateString+" | "+temperatureString,Graphics.TEXT_JUSTIFY_CENTER);
 
     }
 
@@ -151,28 +152,24 @@ class MyGarminWFView extends WatchUi.WatchFace {
             case 2 : //Steps
                 var stepsString = monitoring.steps;
                 var stepsGoalString = monitoring.stepGoal;
-                stepsString = 2500; //for test
                 datas[1] = stepsString;
                 datas[2] = stepsGoalString;
                 break;
             case 3 : //Active Minutes (Weekly)
                 var activeMinutesString = monitoring.activeMinutesWeek.total;
                 var activeMinutesGoalString = monitoring.activeMinutesWeekGoal;
-                activeMinutesString = 100;
                 datas[1] = activeMinutesString;
                 datas[2] = activeMinutesGoalString;
                 break;
             case 4 : //Floors Climbed
                 var floorsClimbedString = monitoring.floorsClimbed;
                 var floorsClimbedGoalString = monitoring.floorsClimbedGoal;
-                floorsClimbedString = 7;
                 datas[1] = floorsClimbedString;
                 datas[2] = floorsClimbedGoalString;
                 break;
             case 5 : //Calories                
                 var caloriesString = monitoring.calories;
                 var caloriesGoalString = getApp().getProperty("CaloriesGoal");
-                caloriesString = 1000;
                 datas[1] = caloriesString;
                 datas[2] = caloriesGoalString;
                 break;

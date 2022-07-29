@@ -9,23 +9,23 @@
     <property id="UseMilitaryFormat" type="boolean">false</property>
 
     <property id="Jauge1DataField" type="number">1</property>
-    <property id="Jauge1BackgroundColor" type="number">0xAAAAAA</property>
+    <property id="Jauge1BackgroundColor" type="number">0x555555</property>
     <property id="Jauge1ForegroundColor" type="number">0xFF0000</property>
     
     <property id="Jauge2DataField" type="number">2</property>
-    <property id="Jauge2BackgroundColor" type="number">0xAAAAAA</property>
+    <property id="Jauge2BackgroundColor" type="number">0x555555</property>
     <property id="Jauge2ForegroundColor" type="number">0xFF5500</property>
 
     <property id="Jauge3DataField" type="number">3</property>
-    <property id="Jauge3BackgroundColor" type="number">0xAAAAAA</property>
+    <property id="Jauge3BackgroundColor" type="number">0x555555</property>
     <property id="Jauge3ForegroundColor" type="number">0xFFAA00</property>
 
     <property id="Jauge4DataField" type="number">4</property>
-    <property id="Jauge4BackgroundColor" type="number">0xAAAAAA</property>
+    <property id="Jauge4BackgroundColor" type="number">0x555555</property>
     <property id="Jauge4ForegroundColor" type="number">0x00FF00</property>
 
     <property id="Jauge5DataField" type="number">5</property>
-    <property id="Jauge5BackgroundColor" type="number">0xAAAAAA</property>
+    <property id="Jauge5BackgroundColor" type="number">0x555555</property>
     <property id="Jauge5ForegroundColor" type="number">0x00AAFF</property>
 
     <property id="CaloriesGoal" type="number">2500</property>
